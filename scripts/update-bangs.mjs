@@ -34,15 +34,11 @@ if (customBangs.length > 0) {
 // Combine: custom bangs first, then DDG bangs
 const combinedBangs = [...customBangs, ...ddgBangs];
 
-// Format the output file
-const output = [
-  "// This file was (mostly) ripped from https://duckduckgo.com/bang.js",
-  "",
-  "export const bangs = ",
-  JSON.stringify(combinedBangs, null, 2),
-  ";",
-  "",
-].join("\n");
+// Format the output file (minified)
+const output = `// This file was (mostly) ripped from https://duckduckgo.com/bang.js
+
+export const bangs = ${JSON.stringify(combinedBangs)};
+`;
 
 // Write the updated bang.js
 writeFileSync("bang.js", output, "utf8");
