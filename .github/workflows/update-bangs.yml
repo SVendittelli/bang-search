@@ -23,9 +23,7 @@ jobs:
           node-version: '24'
 
       - name: Update bangs
-        run: |
-          chmod +x scripts/update-bangs.sh
-          ./scripts/update-bangs.sh
+        run: node scripts/update-bangs.mjs
 
       - name: Check for changes
         id: git-check

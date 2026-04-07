@@ -1,13 +1,13 @@
 # Scripts
 
-## update-bangs.sh
+## update-bangs.mjs
 
 Updates `bang.js` with the latest bangs from DuckDuckGo while preserving custom bangs.
 
 ### Usage
 
 ```bash
-./scripts/update-bangs.sh
+node scripts/update-bangs.mjs
 ```
 
 ### What it does
@@ -23,4 +23,4 @@ This script runs automatically daily via GitHub Actions (`.github/workflows/upda
 
 ### Manual Trigger
 
-You can manually trigger the workflow from the GitHub Actions tab or run the script locally.
+You can manually trigger the workflow from the GitHub Actions tab or run the script locally with Node.js.
