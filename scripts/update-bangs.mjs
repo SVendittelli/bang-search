@@ -35,4 +35,6 @@ export const bangs = ${JSON.stringify(combinedBangs)};
 // Write the updated bang.js
 writeFileSync("public/bang.js", output, "utf8");
 
-console.log(`Done! Updated public/bang.js with ${combinedBangs.length} total bangs`);
+console.log(
+  `Done! Updated public/bang.js with ${combinedBangs.length} total bangs`,
+);

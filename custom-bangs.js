@@ -3,29 +3,44 @@
 
 export const customBangs = [
   {
-    c: "Tech",
     d: "github.com",
-    r: 148,
     s: "Starling Bank GitHub Code Search",
-    sc: "Programming",
     t: "ghsb",
     u: "https://github.com/search?q=org%3Astarlingbank+{{{s}}}&type=code",
   },
   {
-    c: "Tech",
     d: "github.com",
-    r: 149,
     s: "Starling Bank GitHub Repo Search",
-    sc: "Programming",
     t: "ghsbr",
     u: "https://github.com/search?q=org%3Astarlingbank+{{{s}}}&type=repositories",
   },
   {
-    c: "Tech",
+    d: "www.amazon.co.uk",
+    s: "Amazon.co.uk",
+    t: "a",
+    u: "https://www.amazon.co.uk/s?k={{{s}}}",
+  },
+  {
+    d: "www.amazon.co.uk",
+    s: "Amazon.co.uk",
+    t: "am",
+    u: "https://www.amazon.co.uk/s?k={{{s}}}",
+  },
+  {
+    d: "www.amazon.co.uk",
+    s: "Amazon.co.uk order history",
+    t: "amazonorders",
+    u: "https://www.amazon.co.uk/gp/your-account/order-history/ref=oh_aui_search?opt=ab&search={{{s}}} ",
+  },
+  {
+    d: "www.audible.co.uk",
+    s: "Audible UK",
+    t: "audible",
+    u: "http://www.audible.co.uk/search/?advsearchKeywords={{{s}}}&filterby=field-keywords&x=0&y=0",
+  },
+  {
     d: "npmx",
-    r: 147,
     s: "npmx",
-    sc: "Programming",
     t: "npmx",
     u: "https://npmx.dev/search?q={{{s}}}",
   },
