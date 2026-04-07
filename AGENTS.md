@@ -4,6 +4,18 @@
 
 Simple no-build PWA for fast DuckDuckGo bang redirects. Single HTML page with vanilla JS modules.
 
+## Project Conventions
+
+### Git Workflow
+
+- **NEVER commit or push without explicit user permission**
+- **Always ask before creating commits**, even if changes are complete
+- **Use Conventional Commits** format for all commit messages:
+  - Format: `<type>: <description>`
+  - Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
+  - Example: `refactor: move web assets to public/ directory`
+- Include detailed bullet points in commit body when relevant
+
 ## Architecture
 
 - **No build system**: Direct ES modules, no package.json, no bundler
