@@ -3,7 +3,7 @@ name: Update Bangs
 on:
   schedule:
     # Run daily at 00:00 UTC
-    - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
   workflow_dispatch: # Allow manual trigger
 
 jobs:
@@ -12,7 +12,7 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -20,7 +20,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: '24'
+          node-version: "24"
 
       - name: Update bangs
         run: node scripts/update-bangs.mjs
@@ -34,15 +34,15 @@ jobs:
         if: steps.git-check.outputs.changed == 'true' && env.ACT != 'true'
         uses: peter-evans/create-pull-request@v8
         with:
-          commit-message: 'chore: update bangs from DuckDuckGo'
-          title: 'Update bangs list from DuckDuckGo'
+          commit-message: "chore: update bangs from DuckDuckGo"
+          title: "Update bangs list from DuckDuckGo"
           body: |
             Automated update of the bangs list from https://duckduckgo.com/bang.js
-            
+
             This PR was automatically created by the scheduled workflow.
           branch: update-bangs
           delete-branch: true
-      
+
       - name: Local test summary
         if: steps.git-check.outputs.changed == 'true' && env.ACT == 'true'
         run: |

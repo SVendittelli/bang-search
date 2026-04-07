@@ -1,14 +1,15 @@
 import { bangs } from "./bang.js";
 
 // Register service worker for PWA functionality
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js')
-      .then(registration => {
-        console.log('ServiceWorker registered:', registration);
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("/sw.js")
+      .then((registration) => {
+        console.log("ServiceWorker registered:", registration);
       })
-      .catch(err => {
-        console.log('ServiceWorker registration failed:', err);
+      .catch((err) => {
+        console.log("ServiceWorker registration failed:", err);
       });
   });
 }
@@ -19,12 +20,12 @@ function noSearchDefaultPageRender() {
     <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
       <div class="content-container">
         <h1>Bang Search</h1>
-        <p>DuckDuckGo's bang redirects are too slow. Add the following URL as a custom search engine to your browser. Enables <a href="https://duckduckgo.com/bang.html" target="_blank">all of DuckDuckGo's bangs.</a></p>
+        <p>DuckDuckGo's bang redirects are slow, so let's use something cacheable. Add the following URL as a custom search engine to your browser for better performance. Enables <a href="https://duckduckgo.com/bang.html" target="_blank">all of DuckDuckGo's bangs.</a></p>
         <div class="url-container"> 
           <input 
             type="text" 
             class="url-input"
-            value="https://search.vendittelli.co.uk?q=%s"
+            value="https://search.vendittelli.co.uk/?q=%s"
             readonly 
           />
           <button class="copy-button">
