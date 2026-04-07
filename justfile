@@ -6,7 +6,7 @@ default:
 
 # Run local development server with miniserve
 dev:
-    miniserve --index index.html .
+    miniserve --index index.html public
 
 # Update bangs from DuckDuckGo
 update-bangs:
@@ -14,4 +14,4 @@ update-bangs:
 
 # Run local development server on a specific port
 dev-port port:
-    miniserve --index index.html --port {{port}} .
+    miniserve --index index.html --port {{port}} public

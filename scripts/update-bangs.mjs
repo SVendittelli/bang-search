@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { customBangs } from "../custom-bangs.js";
+import { customBangs } from "../public/custom-bangs.js";
 import { writeFileSync } from "fs";
 
 console.log("Downloading latest bangs from DuckDuckGo...");
@@ -33,6 +33,6 @@ export const bangs = ${JSON.stringify(combinedBangs)};
 `;
 
 // Write the updated bang.js
-writeFileSync("bang.js", output, "utf8");
+writeFileSync("public/bang.js", output, "utf8");
 
-console.log(`Done! Updated bang.js with ${combinedBangs.length} total bangs`);
+console.log(`Done! Updated public/bang.js with ${combinedBangs.length} total bangs`);
