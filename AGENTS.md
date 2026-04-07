@@ -38,10 +38,20 @@ Simple no-build PWA for fast DuckDuckGo bang redirects. Single HTML page with va
 **No dev server needed** — open `index.html` directly in browser or run any static server:
 
 ```bash
+just dev
+# or manually:
 miniserve --index index.html .
 ```
 
 **Service worker caching** applies immediately on install. To test changes, clear cache or bump `CACHE_NAME` in `sw.js`.
+
+**Update bangs** from DuckDuckGo (preserves custom bangs):
+
+```bash
+just update-bangs
+# or manually:
+node scripts/update-bangs.mjs
+```
 
 ## Common Edits
 
