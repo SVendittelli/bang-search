@@ -10,7 +10,8 @@ Simple no-build PWA for fast DuckDuckGo bang redirects. Single HTML page with va
 - **Entry point**: `index.html` → loads `main.js` as module
 - **Core files**:
   - `main.js`: app logic, service worker registration, bang parsing/redirect
-  - `bang.js`: massive array of 20,000+ bang definitions (exported as `bangs`)
+  - `bang.js`: generated file with 13,000+ bang definitions (exported as `bangs`)
+  - `custom-bangs.js`: custom bang definitions merged during generation
   - `sw.js`: service worker for PWA offline caching
   - `global.css`: styling
   - `manifest.json`: PWA manifest
@@ -55,7 +56,7 @@ node scripts/update-bangs.mjs
 
 ## Common Edits
 
-- **Add/modify bangs**: edit `bang.js` array
+- **Add/modify bangs**: edit `custom-bangs.js` array, then run `just update-bangs` to regenerate `bang.js`
 - **Change default bang**: modify `LS_DEFAULT_BANG` fallback in `main.js:57`
 - **Update cache**: increment `CACHE_NAME` version in `sw.js:4`
 - **Landing page**: HTML template in `main.js:18-41` (shown when no query)
