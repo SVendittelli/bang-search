@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { customBangs } from "../public/custom-bangs.js";
+import { customBangs } from "../custom-bangs.js";
 import { writeFileSync } from "fs";
 
 console.log("Downloading latest bangs from DuckDuckGo...");
