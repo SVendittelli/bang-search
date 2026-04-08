@@ -39,6 +39,18 @@ export const customBangs = [
     u: "http://www.audible.co.uk/search/?advsearchKeywords={{{s}}}&filterby=field-keywords&x=0&y=0",
   },
   {
+    d: "www.justwatch.com",
+    s: "JustWatch UK",
+    t: "jw",
+    u: "https://www.justwatch.com/uk/search?q={{{s}}}",
+  },
+  {
+    d: "www.justwatch.com",
+    s: "JustWatch UK",
+    t: "justwatch",
+    u: "https://www.justwatch.com/uk/search?q={{{s}}}",
+  },
+  {
     d: "npmx",
     s: "npmx",
     t: "npmx",
