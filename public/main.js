@@ -34,9 +34,9 @@ function noSearchDefaultPageRender() {
         </div>
       </div>
       <footer class="footer">
-        <a href="https://github.com/SVendittelli/bang-search" target="_blank">github</a>
+        <a href="https://github.com/SVendittelli/bang-search" target="_blank">GitHub</a>
         •
-        <a href="https://github.com/SVendittelli" target="_blank">@SVendittelli</a>
+        <a href="https://vendittelli.co.uk/" target="_blank">Vendittelli</a>
       </footer>
     </div>
   `;
