@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { customBangs } from "../custom-bangs.js";
+import { customBangs, excludedBangs } from "../custom-bangs.js";
 import { writeFileSync } from "fs";
 
 console.log("Downloading latest bangs from DuckDuckGo...");
@@ -17,19 +17,27 @@ if (!response.ok) {
 const ddgBangs = await response.json();
 console.log(`Downloaded ${ddgBangs.length} bangs from DuckDuckGo`);
 
+if (excludedBangs.length) {
+  console.log(
+    `Excluding ${excludedBangs.length} DuckDuckGo bangs: ${excludedBangs.join(", ")}`,
+  );
+}
 if (customBangs.length > 0) {
   console.log(
     `Merging ${customBangs.length} custom bangs: ${customBangs.map((b) => b.t).join(", ")}`,
   );
 }
-
-// Combine: custom bangs first, then DDG bangs
-const combinedBangs = [...customBangs, ...ddgBangs];
+// Combine: custom bangs first, then DDG bangs, excluding some
+const combinedBangs = customBangs.concat(
+  ddgBangs.filter(
+    ({ t }) => !excludedBangs.concat(customBangs.map((b) => b.t)).includes(t),
+  ),
+);
 
 // Format the output file (minified)
 const output = `// This file was (mostly) ripped from https://duckduckgo.com/bang.js
 
-export const bangs = ${JSON.stringify(combinedBangs)};
+export const bangs = ${JSON.stringify(combinedBangs, ["d", "s", "t", "u"], 2)};
 `;
 
 // Write the updated bang.js

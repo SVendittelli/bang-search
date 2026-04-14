@@ -1,3 +1,0 @@
-# Generated file containing DuckDuckGo bang definitions
-# May contain URL patterns that trigger false positives
-public/bang.js:generic-api-key:3

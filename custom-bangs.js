@@ -1,19 +1,32 @@
-// Custom bangs to be merged with DuckDuckGo bangs
-// Add your custom bang definitions here
-
+/** Custom bangs to be merged with DuckDuckGo bangs. */
 export const customBangs = [
+  // Use UK Google
+  {
+    d: "www.google.co.uk",
+    s: "Google",
+    t: "g",
+    u: "https://www.google.co.uk/search?q={{{s}}}",
+  },
+  // Work
   {
     d: "github.com",
     s: "Starling Bank GitHub Code Search",
-    t: "ghsb",
+    t: "sb",
     u: "https://github.com/search?q=org%3Astarlingbank+{{{s}}}&type=code",
   },
   {
     d: "github.com",
     s: "Starling Bank GitHub Repo Search",
-    t: "ghsbr",
+    t: "sbr",
     u: "https://github.com/search?q=org%3Astarlingbank+{{{s}}}&type=repositories",
   },
+  {
+    d: "starlingbank.atlassian.net",
+    s: "Starling Bank Confluence",
+    t: "sbw",
+    u: "https://starlingbank.atlassian.net/search?text={{{s}}}",
+  },
+  // Use UK amazon
   {
     d: "www.amazon.co.uk",
     s: "Amazon.co.uk",
@@ -35,9 +48,16 @@ export const customBangs = [
   {
     d: "www.audible.co.uk",
     s: "Audible UK",
+    t: "au",
+    u: "http://www.audible.co.uk/search/?advsearchKeywords={{{s}}}&filterby=field-keywords&x=0&y=0",
+  },
+  {
+    d: "www.audible.co.uk",
+    s: "Audible UK",
     t: "audible",
     u: "http://www.audible.co.uk/search/?advsearchKeywords={{{s}}}&filterby=field-keywords&x=0&y=0",
   },
+  // Use UK justwatch
   {
     d: "www.justwatch.com",
     s: "JustWatch UK",
@@ -50,10 +70,33 @@ export const customBangs = [
     t: "justwatch",
     u: "https://www.justwatch.com/uk/search?q={{{s}}}",
   },
+  // Add npmx
   {
     d: "npmx",
     s: "npmx",
     t: "npmx",
     u: "https://npmx.dev/search?q={{{s}}}",
   },
+  // Cloud storage (fix OneDrive)
+  {
+    d: "onedrive.live.com",
+    s: "OneDrive",
+    t: "onedrive",
+    u: "http://onedrive.live.com/?q={{{s}}}&view=7",
+  },
+  {
+    d: "onedrive.live.com",
+    s: "OneDrive",
+    t: "od",
+    u: "http://onedrive.live.com/?q={{{s}}}&view=7",
+  },
+  {
+    d: "onedrive.live.com",
+    s: "OneDrive",
+    t: "1d",
+    u: "http://onedrive.live.com/?q={{{s}}}&view=7",
+  },
 ];
+
+/** Bangs that DuckDuckGo provides which I wish to exclude. */
+export const excludedBangs = ["thb"];
