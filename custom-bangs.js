@@ -24,7 +24,7 @@ export const customBangs = [
     d: "starlingbank.atlassian.net",
     s: "Starling Bank Confluence",
     t: "sbw",
-    u: "https://starlingbank.atlassian.net/search?text={{{s}}}",
+    u: "https://starlingbank.atlassian.net/wiki/search?text={{{s}}}",
   },
   // Use UK amazon
   {
