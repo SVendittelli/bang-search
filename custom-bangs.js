@@ -7,6 +7,24 @@ export const customBangs = [
     t: "g",
     u: "https://www.google.co.uk/search?q={{{s}}}",
   },
+  {
+    d: "maps.google.co.uk",
+    s: "Google Maps",
+    t: "m",
+    u: "https://maps.google.co.uk/maps?q={{{s}}}",
+  },
+  {
+    d: "maps.google.co.uk",
+    s: "Google Maps",
+    t: "gm",
+    u: "https://maps.google.co.uk/maps?q={{{s}}}",
+  },
+  {
+    d: "maps.google.co.uk",
+    s: "Google Maps",
+    t: "maps",
+    u: "https://maps.google.co.uk/maps?q={{{s}}}",
+  },
   // Work
   {
     d: "github.com",

@@ -8,6 +8,24 @@ export const bangs = [
     "u": "https://www.google.co.uk/search?q={{{s}}}"
   },
   {
+    "d": "maps.google.co.uk",
+    "s": "Google Maps",
+    "t": "m",
+    "u": "https://maps.google.co.uk/maps?q={{{s}}}"
+  },
+  {
+    "d": "maps.google.co.uk",
+    "s": "Google Maps",
+    "t": "gm",
+    "u": "https://maps.google.co.uk/maps?q={{{s}}}"
+  },
+  {
+    "d": "maps.google.co.uk",
+    "s": "Google Maps",
+    "t": "maps",
+    "u": "https://maps.google.co.uk/maps?q={{{s}}}"
+  },
+  {
     "d": "github.com",
     "s": "Starling Bank GitHub Code Search",
     "t": "sb",
@@ -28418,12 +28436,6 @@ export const bangs = [
     "u": "https://www.greenmangaming.com/search/{{{s}}}"
   },
   {
-    "d": "google.com",
-    "s": "Google Maps",
-    "t": "gm",
-    "u": "https://google.com/maps/place/{{{s}}}"
-  },
-  {
     "d": "www.google.co.il",
     "s": "Google Maps Israel",
     "t": "gmil",
@@ -43586,12 +43598,6 @@ export const bangs = [
     "u": "https://maps.google.com/maps?hl=fr&q={{{s}}}"
   },
   {
-    "d": "google.com",
-    "s": "Google Maps",
-    "t": "maps",
-    "u": "https://google.com/maps?q={{{s}}}"
-  },
-  {
     "d": "www.google.com",
     "s": "Google Maps Directions",
     "t": "mapsr",
@@ -45312,12 +45318,6 @@ export const bangs = [
     "s": "Türkiye Cumhuriyeti Orman ve Su İşleri Bakanlığı Meteoroloji Genel Müdürlüğü",
     "t": "mgm",
     "u": "https://www.mgm.gov.tr/tahmin/il-ve-ilceler.aspx?il={{{s}}}"
-  },
-  {
-    "d": "maps.google.com",
-    "s": "Google Maps",
-    "t": "m",
-    "u": "http://maps.google.com/maps?q={{{s}}}"
   },
   {
     "d": "www.managementboek.nl",
