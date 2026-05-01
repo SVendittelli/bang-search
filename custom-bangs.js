@@ -100,19 +100,32 @@ export const customBangs = [
     d: "onedrive.live.com",
     s: "OneDrive",
     t: "onedrive",
-    u: "http://onedrive.live.com/?q={{{s}}}&view=7",
+    u: "https://onedrive.live.com/?q={{{s}}}&view=7",
   },
   {
     d: "onedrive.live.com",
     s: "OneDrive",
     t: "od",
-    u: "http://onedrive.live.com/?q={{{s}}}&view=7",
+    u: "https://onedrive.live.com/?q={{{s}}}&view=7",
   },
   {
     d: "onedrive.live.com",
     s: "OneDrive",
     t: "1d",
-    u: "http://onedrive.live.com/?q={{{s}}}&view=7",
+    u: "https://onedrive.live.com/?q={{{s}}}&view=7",
+  },
+  // AI
+  {
+    d: "claude.ai",
+    s: "Claude",
+    t: "ai",
+    u: "https://claude.ai/new?q={{{s}}}",
+  },
+  {
+    d: "claude.ai",
+    s: "Claude",
+    t: "c",
+    u: "https://claude.ai/new?q={{{s}}}",
   },
 ];
 

@@ -95,19 +95,31 @@ export const bangs = [
     "d": "onedrive.live.com",
     "s": "OneDrive",
     "t": "onedrive",
-    "u": "http://onedrive.live.com/?q={{{s}}}&view=7"
+    "u": "https://onedrive.live.com/?q={{{s}}}&view=7"
   },
   {
     "d": "onedrive.live.com",
     "s": "OneDrive",
     "t": "od",
-    "u": "http://onedrive.live.com/?q={{{s}}}&view=7"
+    "u": "https://onedrive.live.com/?q={{{s}}}&view=7"
   },
   {
     "d": "onedrive.live.com",
     "s": "OneDrive",
     "t": "1d",
-    "u": "http://onedrive.live.com/?q={{{s}}}&view=7"
+    "u": "https://onedrive.live.com/?q={{{s}}}&view=7"
+  },
+  {
+    "d": "claude.ai",
+    "s": "Claude",
+    "t": "ai",
+    "u": "https://claude.ai/new?q={{{s}}}"
+  },
+  {
+    "d": "claude.ai",
+    "s": "Claude",
+    "t": "c",
+    "u": "https://claude.ai/new?q={{{s}}}"
   },
   {
     "d": "www.01net.com",
@@ -2214,12 +2226,6 @@ export const bangs = [
     "s": "AITopics",
     "t": "aitopics",
     "u": "https://aitopics.org/search?q={{{s}}}"
-  },
-  {
-    "d": "www.duckduckgo.com",
-    "s": "Duck.ai",
-    "t": "ai",
-    "u": "https://www.duckduckgo.com/?q={{{s}}}&ia=chat&bang=true "
   },
   {
     "d": "america.aljazeera.com",
@@ -10740,12 +10746,6 @@ export const bangs = [
     "s": "CryptoCurrency Market",
     "t": "ccm",
     "u": "https://coinmarketcap.com/currencies/search/?q={{{s}}}"
-  },
-  {
-    "d": "www.cnet.com",
-    "s": "CNET",
-    "t": "c",
-    "u": "http://www.cnet.com/1770-5_1-0.html?query={{{s}}}"
   },
   {
     "d": "www.cheapies.nz",
