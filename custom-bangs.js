@@ -127,6 +127,13 @@ export const customBangs = [
     t: "c",
     u: "https://claude.ai/new?q={{{s}}}",
   },
+  // Translate
+  {
+    d: "translate.google.com",
+    s: "Google Translate",
+    t: "tr",
+    u: "https://translate.google.com/?sl=auto&tl=en&text={{{s}}}&op=translate",
+  },
 ];
 
 /** Bangs that DuckDuckGo provides which I wish to exclude. */
