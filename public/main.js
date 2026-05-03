@@ -1,4 +1,4 @@
-import { bangs } from "./bang.js";
+import { bangs, currenciesBangs } from "./bang.js";
 
 // Register service worker for PWA functionality
 if ("serviceWorker" in navigator) {
@@ -58,7 +58,7 @@ function noSearchDefaultPageRender() {
 const LS_DEFAULT_BANG = localStorage.getItem("default-bang") ?? "g";
 const defaultBang = bangs.find((b) => b.t === LS_DEFAULT_BANG);
 
-function getBangredirectUrl() {
+function getBangRedirectUrl() {
   const url = new URL(window.location.href);
   const query = url.searchParams.get("q")?.trim() ?? "";
   if (!query) {
@@ -69,8 +69,17 @@ function getBangredirectUrl() {
   const match = query.match(/!(\S+)/i);
 
   const bangCandidate = match?.[1]?.toLowerCase();
+
+  const currencyRegExp = /[a-z]{3,4}2[a-z]{3,4}/;
+
+  let bangList = bangs;
+  if (currencyRegExp.test(bangCandidate)) {
+    bangList = currenciesBangs;
+  }
+
   const selectedBang =
-    (bangCandidate && bangs.find((b) => b.t === bangCandidate)) || defaultBang;
+    (bangCandidate && bangList.find((b) => b.t === bangCandidate)) ||
+    defaultBang;
 
   // Remove the first bang from the query
   const cleanQuery = query.replace(/!\S+\s*/i, "").trim();
@@ -92,7 +101,7 @@ function getBangredirectUrl() {
 }
 
 function doRedirect() {
-  const searchUrl = getBangredirectUrl();
+  const searchUrl = getBangRedirectUrl();
   if (!searchUrl) return;
   window.location.replace(searchUrl);
 }
