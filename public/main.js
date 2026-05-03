@@ -94,12 +94,12 @@ function getBangRedirectUrl() {
   // Format of the url is:
   // https://www.google.com/search?q={{{s}}}
   const searchUrl = selectedBang?.u
-    .replace(
+    ?.replace("{{{l}}}", LS_DEFAULT_LANG)
+    ?.replace(
       "{{{s}}}",
       // Replace %2F with / to fix formats like "!ghr+username/repo"
       encodeURIComponent(cleanQuery).replace(/%2F/g, "/"),
-    )
-    .replace("{{{l}}}", LS_DEFAULT_LANG);
+    );
   if (!searchUrl) return null;
 
   return searchUrl;
