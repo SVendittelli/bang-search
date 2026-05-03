@@ -23,7 +23,7 @@ Simple no-build PWA for fast DuckDuckGo bang redirects. Single HTML page with va
 - **Core files** (all in `public/`):
   - `main.js`: app logic, service worker registration, bang parsing/redirect
   - `bang.js`: generated file with 13,000+ bang definitions (exported as `bangs`)
-  - `sw.js`: service worker for PWA offline caching
+  - `sw.js`: service worker for PWA offline caching; `CACHE_NAME` and `urlsToCache` are auto-generated — do not edit manually
   - `global.css`: styling
   - `manifest.json`: PWA manifest
 - **Build files** (not deployed):
@@ -57,7 +57,7 @@ just dev
 miniserve --index index.html public
 ```
 
-**Service worker caching** applies immediately on install. To test changes, clear cache or bump `CACHE_NAME` in `sw.js`.
+**Service worker caching** applies immediately on install. `CACHE_NAME` is a SHA-256 hash of all cached file contents — it updates automatically when any cached file changes. To force a cache bust, run `just update-sw-cache`.
 
 **Update bangs** from DuckDuckGo (preserves custom bangs):
 
@@ -67,11 +67,25 @@ just update-bangs
 node scripts/update-bangs.mjs
 ```
 
+**Update service worker cache** (file list + cache name):
+
+```bash
+just update-sw-cache
+# or manually:
+node scripts/update-sw-cache.mjs
+```
+
+**Test the CI workflow locally** using `act`:
+
+```bash
+just test-ci
+```
+
 ## Common Edits
 
 - **Add/modify bangs**: edit `custom-bangs.js` array, then run `just update-bangs` to regenerate `bang.js`
 - **Change default bang**: modify `LS_DEFAULT_BANG` fallback in `public/main.js:57`
-- **Update cache**: increment `CACHE_NAME` version in `public/sw.js:4`
+- **Update cache**: run `just update-sw-cache` — do not edit `CACHE_NAME` or `urlsToCache` in `sw.js` manually
 - **Landing page**: HTML template in `public/main.js:18-41` (shown when no query)
 
 ## Deployment
