@@ -16,7 +16,7 @@ https://search.vendittelli.co.uk/?q=%s
 
 ## Development
 
-After cloning setup the pre-commit hooks:
+After cloning set up the pre-commit hooks:
 
 ```bash
 just setup
