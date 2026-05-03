@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if command -v just >/dev/null 2>&1; then
+    just update-bangs
+fi
+
+if command -v gitleaks >/dev/null 2>&1; then
+    gitleaks git --verbose --pre-commit --staged
+fi

@@ -4,6 +4,10 @@
 default:
     @just --list
 
+# Set up the repo
+setup:
+    git config core.hooksPath .githooks
+
 # Run local development server with miniserve
 dev:
     miniserve --index index.html public
@@ -14,4 +18,4 @@ update-bangs:
 
 # Run local development server on a specific port
 dev-port port:
-    miniserve --index index.html --port {{port}} public
+    miniserve --index index.html --port {{ port }} public
