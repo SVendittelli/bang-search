@@ -31,14 +31,7 @@ if (customBangs.length > 0) {
 // Combine: custom bangs first, then DDG bangs, excluding some
 const toRemove = excludedBangs.concat(customBangs.map((b) => b.t));
 const combinedBangs = customBangs.concat(
-  ddgBangs.filter(
-    ({ d, t }) =>
-      !(
-        d === "www.xe.com" ||
-        d === "translate.google.com" ||
-        toRemove.includes(t)
-      ),
-  ),
+  ddgBangs.filter(({ d, t }) => !(d === "www.xe.com" || toRemove.includes(t))),
 );
 
 /** Currencies supported by xe.com as of 2026-05-03. */
@@ -441,7 +434,7 @@ const languages = [
   { languageCode: "zh-CN", supportSource: true, supportTarget: true },
   { languageCode: "zh-TW", supportSource: true, supportTarget: true },
   { languageCode: "zu", supportSource: true, supportTarget: true },
-].filter((l) => !l.languageCode.includes("-"));
+];
 
 const translateBangs = [];
 for (const { languageCode: to } of languages.filter((l) => l.supportTarget)) {
@@ -449,7 +442,7 @@ for (const { languageCode: to } of languages.filter((l) => l.supportTarget)) {
     d: "translate.google.com",
     s: "Google Translate",
     t: `trt-${to}`,
-    u: `https://translate.google.com/?sl=auto&tl=${to}&text={{{s}}}&op=translate`,
+    u: `https://translate.google.com/?sl={{{l}}}&tl=${to}&text={{{s}}}&op=translate`,
   });
 }
 for (const { languageCode: from } of languages.filter((l) => l.supportSource)) {
@@ -457,7 +450,7 @@ for (const { languageCode: from } of languages.filter((l) => l.supportSource)) {
     d: "translate.google.com",
     s: "Google Translate",
     t: `trf-${from}`,
-    u: `https://translate.google.com/?sl=${from}&tl=en&text={{{s}}}&op=translate`,
+    u: `https://translate.google.com/?sl=${from}&tl={{{l}}}&text={{{s}}}&op=translate`,
   });
 }
 console.log(`Supporting ${languages.length} languages to translate`);

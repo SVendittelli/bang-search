@@ -132,7 +132,19 @@ export const customBangs = [
     d: "translate.google.com",
     s: "Google Translate",
     t: "tr",
-    u: "https://translate.google.com/?sl=auto&tl=en&text={{{s}}}&op=translate",
+    u: "https://translate.google.com/?sl=auto&tl={{{l}}}&text={{{s}}}&op=translate",
+  },
+  {
+    d: "translate.google.com",
+    s: "Google Translate",
+    t: "enit",
+    u: "https://translate.google.com/?sl=auto&tl=en&text=it&op=translate",
+  },
+  {
+    d: "translate.google.com",
+    s: "Google Translate",
+    t: "iten",
+    u: "https://translate.google.com/?sl=auto&tl=it&text=en&op=translate",
   },
 ];
 

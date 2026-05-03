@@ -57,6 +57,7 @@ function noSearchDefaultPageRender() {
 
 const LS_DEFAULT_BANG = localStorage.getItem("default-bang") ?? "g";
 const defaultBang = bangs.find((b) => b.t === LS_DEFAULT_BANG);
+const LS_DEFAULT_LANG = localStorage.getItem("default-lang") ?? "en";
 
 function getBangRedirectUrl() {
   const url = new URL(window.location.href);
@@ -92,11 +93,13 @@ function getBangRedirectUrl() {
 
   // Format of the url is:
   // https://www.google.com/search?q={{{s}}}
-  const searchUrl = selectedBang?.u.replace(
-    "{{{s}}}",
-    // Replace %2F with / to fix formats like "!ghr+username/repo"
-    encodeURIComponent(cleanQuery).replace(/%2F/g, "/"),
-  );
+  const searchUrl = selectedBang?.u
+    .replace(
+      "{{{s}}}",
+      // Replace %2F with / to fix formats like "!ghr+username/repo"
+      encodeURIComponent(cleanQuery).replace(/%2F/g, "/"),
+    )
+    .replace("{{{l}}}", LS_DEFAULT_LANG);
   if (!searchUrl) return null;
 
   return searchUrl;
