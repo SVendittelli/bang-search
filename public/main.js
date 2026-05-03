@@ -69,7 +69,7 @@ function getBangRedirectUrl() {
 
   const match = query.match(/!(\S+)/i);
 
-  const bangCandidate = match?.[1]?.toLowerCase();
+  const bangCandidate = match?.[1]?.toLowerCase() ?? "";
 
   const currencyRegExp = /[a-z]{3,4}2[a-z]{3,4}/;
 
