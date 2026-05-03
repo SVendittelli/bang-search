@@ -1,4 +1,4 @@
-import { bangs, convertBangs } from "./bang.js";
+import { bangs, currencyBangs, translateBangs } from "./bang.js";
 
 // Register service worker for PWA functionality
 if ("serviceWorker" in navigator) {
@@ -70,11 +70,13 @@ function getBangRedirectUrl() {
 
   const bangCandidate = match?.[1]?.toLowerCase();
 
-  const conversionRegExp = /[a-z]{2,4}2[a-z]{2,4}/;
+  const currencyRegExp = /[a-z]{3,4}2[a-z]{3,4}/;
 
   let bangList = bangs;
-  if (conversionRegExp.test(bangCandidate)) {
-    bangList = convertBangs;
+  if (bangCandidate.startsWith("trt-") || bangCandidate.startsWith("trf-")) {
+    bangList = translateBangs;
+  } else if (currencyRegExp.test(bangCandidate)) {
+    bangList = currencyBangs;
   }
 
   const selectedBang =

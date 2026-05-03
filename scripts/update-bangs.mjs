@@ -238,9 +238,7 @@ for (const from of currencies) {
     });
   }
 }
-if (customBangs.length > 0) {
-  console.log(`Supporting ${currencies.length} currencies to convert`);
-}
+console.log(`Supporting ${currencies.length} currencies to convert`);
 
 /**
  * From the Google API as of 2026-05-03.
@@ -446,27 +444,32 @@ const languages = [
 ].filter((l) => !l.languageCode.includes("-"));
 
 const translateBangs = [];
+for (const { languageCode: to } of languages.filter((l) => l.supportTarget)) {
+  translateBangs.push({
+    d: "translate.google.com",
+    s: "Google Translate",
+    t: `trt-${to}`,
+    u: `https://translate.google.com/?sl=auto&tl=${to}&text={{{s}}}&op=translate`,
+  });
+}
 for (const { languageCode: from } of languages.filter((l) => l.supportSource)) {
-  for (const { languageCode: to } of languages.filter((l) => l.supportTarget)) {
-    if (from === to) continue;
-    currenciesBangs.push({
-      d: "translate.google.com",
-      s: "Google Translate",
-      t: `${from}2${to}`,
-      u: `https://translate.google.com/?sl=${from}&tl=${to}&text={{{s}}}&op=translate`,
-    });
-  }
+  translateBangs.push({
+    d: "translate.google.com",
+    s: "Google Translate",
+    t: `trf-${from}`,
+    u: `https://translate.google.com/?sl=${from}&tl=en&text={{{s}}}&op=translate`,
+  });
 }
-if (customBangs.length > 0) {
-  console.log(`Supporting ${languages.length} languages to translate`);
-}
+console.log(`Supporting ${languages.length} languages to translate`);
 
 // Format the output file (minified)
 const output = `// This file was (mostly) ripped from https://duckduckgo.com/bang.js
 
 export const bangs = ${JSON.stringify(combinedBangs, ["d", "s", "t", "u"], 2)};
 
-export const convertBangs = ${JSON.stringify(currenciesBangs.concat(translateBangs), ["d", "s", "t", "u"], 2)};
+export const currencyBangs = ${JSON.stringify(currenciesBangs, ["d", "s", "t", "u"], 2)};
+
+export const translateBangs = ${JSON.stringify(translateBangs, ["d", "s", "t", "u"], 2)};
 `;
 
 // Write the updated bang.js
