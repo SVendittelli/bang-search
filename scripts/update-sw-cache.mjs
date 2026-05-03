@@ -2,6 +2,7 @@
 
 import { readdirSync, readFileSync, writeFileSync } from "fs";
 import { join } from "path";
+import { execSync } from "child_process";
 
 const PUBLIC_DIR = "public";
 const SW_PATH = join(PUBLIC_DIR, "sw.js");
@@ -32,24 +33,34 @@ for (const file of files.sort()) {
   urlsToCache.push(`/${file}`);
 }
 
+// Get the current git commit hash (short)
+const commitHash = execSync("git rev-parse --short HEAD").toString().trim();
+const cacheName = `bang-search-${commitHash}`;
+
 const urlLines = urlsToCache.map((u) => `  "${u}"`).join(",\n");
-const newBlock = `const urlsToCache = [\n${urlLines},\n];`;
+const newUrlsBlock = `const urlsToCache = [\n${urlLines},\n];`;
+const newCacheName = `const CACHE_NAME = "${cacheName}";`;
 
-// Replace the existing urlsToCache block in sw.js
-const sw = readFileSync(SW_PATH, "utf8");
-const updated = sw.replace(
-  /const urlsToCache = \[[\s\S]*?\];/,
-  newBlock,
-);
+// Replace both CACHE_NAME and urlsToCache in sw.js
+let sw = readFileSync(SW_PATH, "utf8");
 
-if (updated === sw) {
+if (!/const urlsToCache = \[[\s\S]*?\];/.test(sw)) {
   console.error("Could not find urlsToCache block in sw.js — no changes made.");
   process.exit(1);
 }
+const updatedUrls = sw.replace(/const urlsToCache = \[[\s\S]*?\];/, newUrlsBlock);
+
+if (!/const CACHE_NAME = ".*?";/.test(updatedUrls)) {
+  console.error("Could not find CACHE_NAME in sw.js — no changes made.");
+  process.exit(1);
+}
+const updated = updatedUrls.replace(/const CACHE_NAME = ".*?";/, newCacheName);
 
 writeFileSync(SW_PATH, updated, "utf8");
 
-console.log(`Updated ${SW_PATH} with ${urlsToCache.length} cache entries:`);
+console.log(`Updated ${SW_PATH}:`);
+console.log(`  CACHE_NAME: ${cacheName}`);
+console.log(`  ${urlsToCache.length} cache entries:`);
 for (const u of urlsToCache) {
-  console.log(`  ${u}`);
+  console.log(`    ${u}`);
 }
