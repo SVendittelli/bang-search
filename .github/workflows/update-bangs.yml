@@ -25,10 +25,13 @@ jobs:
       - name: Update bangs
         run: node scripts/update-bangs.mjs
 
+      - name: Update service worker cache
+        run: node scripts/update-sw-cache.mjs
+
       - name: Check for changes
         id: git-check
         run: |
-          git diff --exit-code bang.js || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff --exit-code public/bang.js public/sw.js || echo "changed=true" >> $GITHUB_OUTPUT
 
       - name: Create Pull Request
         if: steps.git-check.outputs.changed == 'true' && env.ACT != 'true'

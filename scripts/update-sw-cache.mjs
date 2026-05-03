@@ -2,7 +2,9 @@
 
 import { readdirSync, readFileSync, writeFileSync } from "fs";
 import { join } from "path";
-import { execSync } from "child_process";
+
+// Use a UTC timestamp as the cache suffix
+const suffix = new Date().toISOString().slice(0, 19);
 
 const PUBLIC_DIR = "public";
 const SW_PATH = join(PUBLIC_DIR, "sw.js");
@@ -33,9 +35,7 @@ for (const file of files.sort()) {
   urlsToCache.push(`/${file}`);
 }
 
-// Get the current git commit hash (short)
-const commitHash = execSync("git rev-parse --short HEAD").toString().trim();
-const cacheName = `bang-search-${commitHash}`;
+const cacheName = `bang-search-${suffix}`;
 
 const urlLines = urlsToCache.map((u) => `  "${u}"`).join(",\n");
 const newUrlsBlock = `const urlsToCache = [\n${urlLines},\n];`;
@@ -48,7 +48,10 @@ if (!/const urlsToCache = \[[\s\S]*?\];/.test(sw)) {
   console.error("Could not find urlsToCache block in sw.js — no changes made.");
   process.exit(1);
 }
-const updatedUrls = sw.replace(/const urlsToCache = \[[\s\S]*?\];/, newUrlsBlock);
+const updatedUrls = sw.replace(
+  /const urlsToCache = \[[\s\S]*?\];/,
+  newUrlsBlock,
+);
 
 if (!/const CACHE_NAME = ".*?";/.test(updatedUrls)) {
   console.error("Could not find CACHE_NAME in sw.js — no changes made.");
