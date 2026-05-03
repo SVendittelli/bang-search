@@ -3,6 +3,8 @@
 if command -v just >/dev/null 2>&1; then
     just update-bangs
     git add public/bang.js
+    just update-sw-cache
+    git add public/sw.js
 fi
 
 if command -v gitleaks >/dev/null 2>&1; then

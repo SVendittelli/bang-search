@@ -16,6 +16,10 @@ dev:
 update-bangs:
     node scripts/update-bangs.mjs
 
+# Update the service worker cache file list
+update-sw-cache:
+    node scripts/update-sw-cache.mjs
+
 # Run local development server on a specific port
 dev-port port:
     miniserve --index index.html --port {{ port }} public

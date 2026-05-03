@@ -4,14 +4,15 @@
 const CACHE_NAME = "bang-search-v1";
 const urlsToCache = [
   "/",
-  "/index.html",
-  "/main.js",
   "/bang.js",
-  "/global.css",
-  "/search.svg",
-  "/clipboard.svg",
   "/clipboard-check.svg",
+  "/clipboard.svg",
+  "/global.css",
+  "/index.html",
+  "/languages.js",
+  "/main.js",
   "/manifest.json",
+  "/search.svg",
 ];
 
 // Install event - cache all assets
