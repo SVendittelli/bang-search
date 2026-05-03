@@ -31,7 +31,7 @@ jobs:
       - name: Check for changes
         id: git-check
         run: |
-          git diff --exit-code public/bang.js public/sw.js || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff --exit-code || echo "changed=true" >> $GITHUB_OUTPUT
 
       - name: Create Pull Request
         if: steps.git-check.outputs.changed == 'true' && env.ACT != 'true'
@@ -50,5 +50,5 @@ jobs:
         if: steps.git-check.outputs.changed == 'true' && env.ACT == 'true'
         run: |
           echo "::notice::Running in act - PR creation skipped"
-          echo "Changes detected in bang.js:"
-          git diff --stat bang.js
+          echo "Changes detected:"
+          git diff --stat
