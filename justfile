@@ -20,6 +20,10 @@ update-bangs:
 update-sw-cache:
     node scripts/update-sw-cache.mjs
 
+# Test the update-bangs workflow locally using act
+test-ci:
+    gh act schedule --workflows .github/workflows/update-bangs.yml
+
 # Run local development server on a specific port
 dev-port port:
     miniserve --index index.html --port {{ port }} public
