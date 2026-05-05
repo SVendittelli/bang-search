@@ -152,6 +152,31 @@ export const customBangs = [
     t: "iten",
     u: "https://translate.google.com/?sl=auto&tl=it&text=en&op=translate",
   },
+  // eBay UK
+  {
+    d: "www.ebay.co.uk",
+    s: "eBay",
+    t: "e",
+    u: "https://www.ebay.co.uk/sch/i.html?_nkw={{{s}}}&LH_PrefLoc=1",
+  },
+  {
+    d: "www.ebay.co.uk",
+    s: "eBay",
+    t: "eb",
+    u: "https://www.ebay.co.uk/sch/i.html?_nkw={{{s}}}&LH_PrefLoc=1",
+  },
+  {
+    d: "www.ebay.co.uk",
+    s: "eBay",
+    t: "ebay",
+    u: "https://www.ebay.co.uk/sch/i.html?_nkw={{{s}}}&LH_PrefLoc=1",
+  },
+  {
+    d: "www.ebay.co.uk",
+    s: "eBay Sold",
+    t: "ebaysold",
+    u: "https://www.ebay.co.uk/sch/i.html?isRefine=true&_nkw={{{s}}}&LH_Sold=1",
+  },
 ];
 
 /** Bangs that DuckDuckGo provides which I wish to exclude. */
