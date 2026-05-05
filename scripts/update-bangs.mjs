@@ -9,6 +9,8 @@ import {
 import { languages } from "../public/languages.js";
 import { writeFileSync } from "fs";
 
+const numberFormat = new Intl.NumberFormat("en-GB");
+
 console.log("Downloading latest bangs from DuckDuckGo...");
 
 // Fetch the latest bangs from DuckDuckGo
@@ -21,18 +23,9 @@ if (!response.ok) {
 }
 
 const ddgBangs = await response.json();
-console.log(`Downloaded ${ddgBangs.length} bangs from DuckDuckGo`);
-
-if (excludedBangs.length) {
-  console.log(
-    `Excluding at least ${excludedBangs.length} DuckDuckGo bangs: ${excludedBangs.join(", ")}`,
-  );
-}
-if (customBangs.length > 0) {
-  console.log(
-    `Merging ${customBangs.length} custom bangs: ${customBangs.map((b) => b.t).join(", ")}`,
-  );
-}
+console.log(
+  `Downloaded ${numberFormat.format(ddgBangs.length)} bangs from DuckDuckGo`,
+);
 
 // Combine: custom bangs first, then DDG bangs, excluding some
 const toRemove = excludedBangs.concat(customBangs.map((b) => b.t));
@@ -45,6 +38,13 @@ const combinedBangs = customBangs.concat(
         excludedBangPatterns.some((re) => re.test(t))
       ),
   ),
+);
+
+console.log(
+  `Merging ${numberFormat.format(customBangs.length)} custom bangs: ${customBangs.map((b) => b.t).join(", ")}`,
+);
+console.log(
+  `Excluding ${numberFormat.format(ddgBangs.length + customBangs.length - combinedBangs.length)} DuckDuckGo bangs`,
 );
 
 /** Currencies supported by xe.com as of 2026-05-03. */
@@ -244,7 +244,9 @@ for (const from of currencies) {
     });
   }
 }
-console.log(`Supporting ${currencies.length} currencies to convert`);
+console.log(
+  `Supporting ${numberFormat.format(currencies.length)} currencies to convert`,
+);
 
 const translateBangs = [];
 for (const { languageCode: to } of languages.filter((l) => l.supportTarget)) {
@@ -263,7 +265,9 @@ for (const { languageCode: from } of languages.filter((l) => l.supportSource)) {
     u: `https://translate.google.com/?sl=${from}&tl={{{l}}}&text={{{s}}}&op=translate`,
   });
 }
-console.log(`Supporting ${languages.length} languages to translate`);
+console.log(
+  `Supporting ${numberFormat.format(languages.length)} languages to translate`,
+);
 
 // Format the output file (minified)
 const output = `// This file was (mostly) ripped from https://duckduckgo.com/bang.js
@@ -279,5 +283,5 @@ export const translateBangs = ${JSON.stringify(translateBangs, ["d", "s", "t", "
 writeFileSync("public/bang.js", output, "utf8");
 
 console.log(
-  `Done! Updated public/bang.js with ${combinedBangs.length} total bangs`,
+  `Done! Updated public/bang.js with ${numberFormat.format(combinedBangs.length + currenciesBangs.length + translateBangs.length)} total bangs`,
 );
