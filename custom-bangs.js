@@ -184,4 +184,11 @@ export const customBangs = [
     t: "ddb",
     u: "https://www.dndbeyond.com/search?q={{{s}}}",
   },
+  // Etsy UK location
+  {
+    d: "www.etsy.com",
+    s: "Etsy",
+    t: "etsy",
+    u: "https://www.etsy.com/search?q={{{s}}}&locationQuery=2635167",
+  },
 ];
