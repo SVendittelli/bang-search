@@ -177,4 +177,11 @@ export const customBangs = [
     t: "ebaysold",
     u: "https://www.ebay.co.uk/sch/i.html?isRefine=true&_nkw={{{s}}}&LH_Sold=1",
   },
+  // D&D Beyond
+  {
+    d: "www.dndbeyond.com",
+    s: "D&D Beyond",
+    t: "ddb",
+    u: "https://www.dndbeyond.com/search?q={{{s}}}",
+  },
 ];
