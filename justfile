@@ -1,5 +1,8 @@
 # Bang Search justfile
 
+set shell := ["zsh", "-uc"]
+set windows-shell := ["pwsh.exe", "-NoLogo", "-Command"]
+
 # List available recipes
 default:
     @just --list
