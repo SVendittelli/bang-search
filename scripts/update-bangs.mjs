@@ -1,6 +1,11 @@
 #!/usr/bin/env node
 
-import { customBangs, excludedBangs } from "../custom-bangs.js";
+import { customBangs } from "../custom-bangs.js";
+import {
+  excludedBangs,
+  excludedBangPatterns,
+  excludedDomains,
+} from "../excluded-bangs.js";
 import { languages } from "../public/languages.js";
 import { writeFileSync } from "fs";
 
@@ -20,7 +25,7 @@ console.log(`Downloaded ${ddgBangs.length} bangs from DuckDuckGo`);
 
 if (excludedBangs.length) {
   console.log(
-    `Excluding ${excludedBangs.length} DuckDuckGo bangs: ${excludedBangs.join(", ")}`,
+    `Excluding at least ${excludedBangs.length} DuckDuckGo bangs: ${excludedBangs.join(", ")}`,
   );
 }
 if (customBangs.length > 0) {
@@ -32,7 +37,14 @@ if (customBangs.length > 0) {
 // Combine: custom bangs first, then DDG bangs, excluding some
 const toRemove = excludedBangs.concat(customBangs.map((b) => b.t));
 const combinedBangs = customBangs.concat(
-  ddgBangs.filter(({ d, t }) => !(d === "www.xe.com" || toRemove.includes(t))),
+  ddgBangs.filter(
+    ({ d, t }) =>
+      !(
+        excludedDomains.includes(d) ||
+        toRemove.includes(t) ||
+        excludedBangPatterns.some((re) => re.test(t))
+      ),
+  ),
 );
 
 /** Currencies supported by xe.com as of 2026-05-03. */

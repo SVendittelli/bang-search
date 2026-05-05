@@ -178,6 +178,3 @@ export const customBangs = [
     u: "https://www.ebay.co.uk/sch/i.html?isRefine=true&_nkw={{{s}}}&LH_Sold=1",
   },
 ];
-
-/** Bangs that DuckDuckGo provides which I wish to exclude. */
-export const excludedBangs = ["thb"];
