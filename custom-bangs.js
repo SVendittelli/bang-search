@@ -128,27 +128,27 @@ export const customBangs = [
   {
     d: "www.etsy.com",
     s: "Etsy",
-    t: "etsy",
+    t: ["et", "etsy"],
     u: "https://www.etsy.com/search?q={{{s}}}&locationQuery=2635167",
   },
   // Local library
   {
     d: "rbwm.spydus.co.uk",
     s: "RBWM Library",
-    t: "lib",
+    t: ["lib", "library"],
     u: "https://rbwm.spydus.co.uk/cgi-bin/spydus.exe/ENQ/OPAC/BIBENQ?ENTRY={{{s}}}&ENTRY_NAME=BS&ENTRY_TYPE=K&SORTS=SQL_REL_BIB&GQ={{{s}}}&ISGLB=0&NRECS=10&QRY=&QRYTEXT=Full+catalogue&_SPQ=2",
   },
   // Government & Law
   {
     d: "www.gov.uk",
     s: "GOV.UK",
-    t: ["gov", "govuk"],
+    t: ["gov", "gov.uk", "govuk"],
     u: "https://www.gov.uk/search?q={{{s}}}",
   },
   {
     d: "www.electoralcommission.org.uk",
     s: "The Electoral Commission Upcoming Elections",
-    t: "elec",
+    t: ["elec", "electoralcommission"],
     u: "https://www.electoralcommission.org.uk/polling-stations?postcode-search={{{s}}}",
   },
   {
