@@ -63,7 +63,10 @@ if (currentCacheName === cacheName) {
 // Update urlsToCache and CACHE_NAME
 const urlLines = urlsToCache.map((u) => `  "${u}"`).join(",\n");
 const updated = sw
-  .replace(/const urlsToCache = \[[\s\S]*?\];/, `const urlsToCache = [\n${urlLines},\n];`)
+  .replace(
+    /const urlsToCache = \[[\s\S]*?\];/,
+    `const urlsToCache = [\n${urlLines},\n];`,
+  )
   .replace(/const CACHE_NAME = ".*?";/, `const CACHE_NAME = "${cacheName}";`);
 
 writeFileSync(SW_PATH, updated, "utf8");
