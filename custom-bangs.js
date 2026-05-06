@@ -191,4 +191,48 @@ export const customBangs = [
     t: "etsy",
     u: "https://www.etsy.com/search?q={{{s}}}&locationQuery=2635167",
   },
+  // Local library
+  {
+    d: "rbwm.spydus.co.uk",
+    s: "RBWM Library",
+    t: "lib",
+    u: "https://rbwm.spydus.co.uk/cgi-bin/spydus.exe/ENQ/OPAC/BIBENQ?ENTRY={{{s}}}&ENTRY_NAME=BS&ENTRY_TYPE=K&SORTS=SQL_REL_BIB&GQ={{{s}}}&ISGLB=0&NRECS=10&QRY=&QRYTEXT=Full+catalogue&_SPQ=2",
+  },
+  // Government & Law
+  {
+    d: "www.gov.uk",
+    s: "GOV.UK",
+    t: "gov",
+    u: "https://www.gov.uk/search?q={{{s}}}",
+  },
+  {
+    d: "www.gov.uk",
+    s: "GOV.UK",
+    t: "govuk",
+    u: "https://www.gov.uk/search?q={{{s}}}",
+  },
+  {
+    d: "www.electoralcommission.org.uk",
+    s: "The Electoral Commission Upcoming Elections",
+    t: "elec",
+    u: "https://www.electoralcommission.org.uk/polling-stations?postcode-search={{{s}}}",
+  },
+  {
+    d: "www.legislation.gov.uk",
+    s: "UK Legislation (Official Archive)",
+    t: "law",
+    u: "http://www.legislation.gov.uk/all?title={{{s}}}",
+  },
+  {
+    d: "www.legislation.gov.uk",
+    s: "UK Legislation (Official Archive)",
+    t: "laws",
+    u: "http://www.legislation.gov.uk/all?title={{{s}}}",
+  },
+  {
+    d: "www.rbwm.gov.uk",
+    s: "RBWM Council",
+    t: "rbwm",
+    u: "https://scripts.rbwm.gov.uk/scripts/search/?zoom_query=Bins&zoom_cat=3&op=Search",
+  },
 ];

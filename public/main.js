@@ -95,7 +95,7 @@ function getBangRedirectUrl() {
   // https://www.google.com/search?q={{{s}}}
   const searchUrl = selectedBang?.u
     ?.replace("{{{l}}}", LS_DEFAULT_LANG)
-    ?.replace(
+    ?.replaceAll(
       "{{{s}}}",
       // Replace %2F with / to fix formats like "!ghr+username/repo"
       encodeURIComponent(cleanQuery).replace(/%2F/g, "/"),
