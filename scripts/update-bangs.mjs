@@ -28,8 +28,11 @@ console.log(
 );
 
 // Combine: custom bangs first, then DDG bangs, excluding some
-const toRemove = excludedBangs.concat(customBangs.map((b) => b.t));
-const combinedBangs = customBangs.concat(
+const toRemove = excludedBangs.concat(customBangs.flatMap((b) => [b.t].flat()));
+const expandedCustomBangs = customBangs.flatMap((b) =>
+  Array.isArray(b.t) ? b.t.map((trigger) => ({ ...b, t: trigger })) : [b]
+);
+const combinedBangs = expandedCustomBangs.concat(
   ddgBangs.filter(
     ({ d, t }) =>
       !(
@@ -41,7 +44,7 @@ const combinedBangs = customBangs.concat(
 );
 
 console.log(
-  `Merging ${numberFormat.format(customBangs.length)} custom bangs: ${customBangs.map((b) => b.t).join(", ")}`,
+  `Merging ${numberFormat.format(customBangs.length)} custom bangs: ${customBangs.flatMap((b) => [b.t].flat()).join(", ")}`,
 );
 console.log(
   `Excluding ${numberFormat.format(ddgBangs.length + customBangs.length - combinedBangs.length)} DuckDuckGo bangs`,

@@ -10,19 +10,7 @@ export const customBangs = [
   {
     d: "maps.google.co.uk",
     s: "Google Maps",
-    t: "m",
-    u: "https://maps.google.co.uk/maps?q={{{s}}}",
-  },
-  {
-    d: "maps.google.co.uk",
-    s: "Google Maps",
-    t: "gm",
-    u: "https://maps.google.co.uk/maps?q={{{s}}}",
-  },
-  {
-    d: "maps.google.co.uk",
-    s: "Google Maps",
-    t: "maps",
+    t: ["m", "gm", "maps"],
     u: "https://maps.google.co.uk/maps?q={{{s}}}",
   },
   // Work
@@ -54,13 +42,7 @@ export const customBangs = [
   {
     d: "www.amazon.co.uk",
     s: "Amazon.co.uk",
-    t: "a",
-    u: "https://www.amazon.co.uk/s?k={{{s}}}",
-  },
-  {
-    d: "www.amazon.co.uk",
-    s: "Amazon.co.uk",
-    t: "am",
+    t: ["a", "am"],
     u: "https://www.amazon.co.uk/s?k={{{s}}}",
   },
   {
@@ -72,26 +54,14 @@ export const customBangs = [
   {
     d: "www.audible.co.uk",
     s: "Audible UK",
-    t: "au",
-    u: "http://www.audible.co.uk/search/?advsearchKeywords={{{s}}}&filterby=field-keywords&x=0&y=0",
-  },
-  {
-    d: "www.audible.co.uk",
-    s: "Audible UK",
-    t: "audible",
+    t: ["au", "audible"],
     u: "http://www.audible.co.uk/search/?advsearchKeywords={{{s}}}&filterby=field-keywords&x=0&y=0",
   },
   // Use UK justwatch
   {
     d: "www.justwatch.com",
     s: "JustWatch UK",
-    t: "jw",
-    u: "https://www.justwatch.com/uk/search?q={{{s}}}",
-  },
-  {
-    d: "www.justwatch.com",
-    s: "JustWatch UK",
-    t: "justwatch",
+    t: ["jw", "justwatch"],
     u: "https://www.justwatch.com/uk/search?q={{{s}}}",
   },
   // Add npmx
@@ -105,32 +75,14 @@ export const customBangs = [
   {
     d: "onedrive.live.com",
     s: "OneDrive",
-    t: "onedrive",
-    u: "https://onedrive.live.com/?q={{{s}}}&view=7",
-  },
-  {
-    d: "onedrive.live.com",
-    s: "OneDrive",
-    t: "od",
-    u: "https://onedrive.live.com/?q={{{s}}}&view=7",
-  },
-  {
-    d: "onedrive.live.com",
-    s: "OneDrive",
-    t: "1d",
+    t: ["onedrive", "od", "1d"],
     u: "https://onedrive.live.com/?q={{{s}}}&view=7",
   },
   // AI
   {
     d: "claude.ai",
     s: "Claude",
-    t: "ai",
-    u: "https://claude.ai/new?q={{{s}}}",
-  },
-  {
-    d: "claude.ai",
-    s: "Claude",
-    t: "c",
+    t: ["ai", "c"],
     u: "https://claude.ai/new?q={{{s}}}",
   },
   // Translate
@@ -156,19 +108,7 @@ export const customBangs = [
   {
     d: "www.ebay.co.uk",
     s: "eBay",
-    t: "e",
-    u: "https://www.ebay.co.uk/sch/i.html?_nkw={{{s}}}&LH_PrefLoc=1",
-  },
-  {
-    d: "www.ebay.co.uk",
-    s: "eBay",
-    t: "eb",
-    u: "https://www.ebay.co.uk/sch/i.html?_nkw={{{s}}}&LH_PrefLoc=1",
-  },
-  {
-    d: "www.ebay.co.uk",
-    s: "eBay",
-    t: "ebay",
+    t: ["e", "eb", "ebay"],
     u: "https://www.ebay.co.uk/sch/i.html?_nkw={{{s}}}&LH_PrefLoc=1",
   },
   {
@@ -202,13 +142,7 @@ export const customBangs = [
   {
     d: "www.gov.uk",
     s: "GOV.UK",
-    t: "gov",
-    u: "https://www.gov.uk/search?q={{{s}}}",
-  },
-  {
-    d: "www.gov.uk",
-    s: "GOV.UK",
-    t: "govuk",
+    t: ["gov", "govuk"],
     u: "https://www.gov.uk/search?q={{{s}}}",
   },
   {
@@ -220,13 +154,7 @@ export const customBangs = [
   {
     d: "www.legislation.gov.uk",
     s: "UK Legislation (Official Archive)",
-    t: "law",
-    u: "http://www.legislation.gov.uk/all?title={{{s}}}",
-  },
-  {
-    d: "www.legislation.gov.uk",
-    s: "UK Legislation (Official Archive)",
-    t: "laws",
+    t: ["law", "laws"],
     u: "http://www.legislation.gov.uk/all?title={{{s}}}",
   },
   {
