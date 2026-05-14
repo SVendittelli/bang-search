@@ -163,4 +163,11 @@ export const customBangs = [
     t: "rbwm",
     u: "https://scripts.rbwm.gov.uk/scripts/search/?zoom_query=Bins&zoom_cat=3&op=Search",
   },
+  // Royal Mail
+  {
+    d: "www.royalmail.com",
+    s: "Royal Mail Tracking ID",
+    t: "rm",
+    u: "https://www.royalmail.com/track-your-item#/tracking-results/{{{s}}}",
+  },
 ];
