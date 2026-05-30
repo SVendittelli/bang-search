@@ -5,6 +5,12 @@ export const bangs = [
     "d": "www.google.co.uk",
     "s": "Google",
     "t": "g",
+    "u": "https://www.google.co.uk/search?q={{{s}}}+-ai&udm=web"
+  },
+  {
+    "d": "www.google.co.uk",
+    "s": "Google",
+    "t": "gai",
     "u": "https://www.google.co.uk/search?q={{{s}}}"
   },
   {
