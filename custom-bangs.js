@@ -5,13 +5,25 @@ export const customBangs = [
     d: "www.google.co.uk",
     s: "Google",
     t: "g",
+    u: "https://www.google.co.uk/search?q={{{s}}}",
+  },
+  {
+    d: "www.google.co.uk",
+    s: "Google - Only Websites",
+    t: "gweb",
+    u: "https://www.google.co.uk/search?q={{{s}}}&udm=web",
+  },
+  {
+    d: "www.google.co.uk",
+    s: "Google No AI - Only Websites",
+    t: "gretro",
     u: "https://www.google.co.uk/search?q={{{s}}}+-ai&udm=web",
   },
   {
     d: "www.google.co.uk",
-    s: "Google",
-    t: "gai",
-    u: "https://www.google.co.uk/search?q={{{s}}}",
+    s: "Google No AI",
+    t: "gnoai",
+    u: "https://www.google.co.uk/search?q={{{s}}}+-ai",
   },
   {
     d: "maps.google.co.uk",
