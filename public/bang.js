@@ -272,6 +272,18 @@ export const bangs = [
     "u": "https://www.royalmail.com/track-your-item#/tracking-results/{{{s}}}"
   },
   {
+    "d": "www.facebook.com",
+    "s": "Facebook",
+    "t": "facebook",
+    "u": "https://www.facebook.com/search/top?q={{{s}}}"
+  },
+  {
+    "d": "www.facebook.com",
+    "s": "Facebook",
+    "t": "fb",
+    "u": "https://www.facebook.com/search/top?q={{{s}}}"
+  },
+  {
     "d": "www.01net.com",
     "s": "01net",
     "t": "01net",
@@ -22862,12 +22874,6 @@ export const bangs = [
     "u": "https://www.fabric.com/SearchResults2.aspx?SearchText={{{s}}}"
   },
   {
-    "d": "www.facebook.com",
-    "s": "Facebook",
-    "t": "facebook",
-    "u": "http://www.facebook.com/s.php?q={{{s}}}"
-  },
-  {
     "d": "www.google.com",
     "s": "Google",
     "t": "facephoto",
@@ -23268,12 +23274,6 @@ export const bangs = [
     "s": "FramaBee",
     "t": "fbee",
     "u": "https://framabee.org/?q={{{s}}} "
-  },
-  {
-    "d": "www.facebook.com",
-    "s": "Facebook",
-    "t": "fb",
-    "u": "https://www.facebook.com/search.php/?q={{{s}}}"
   },
   {
     "d": "facebook.com",

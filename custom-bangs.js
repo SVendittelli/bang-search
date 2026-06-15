@@ -188,4 +188,11 @@ export const customBangs = [
     t: "rm",
     u: "https://www.royalmail.com/track-your-item#/tracking-results/{{{s}}}",
   },
+  // Facebook
+  {
+    d: "www.facebook.com",
+    s: "Facebook",
+    t: ["facebook", "fb"],
+    u: "https://www.facebook.com/search/top?q={{{s}}}",
+  },
 ];
