@@ -5,4 +5,4 @@ export const excludedBangs = ["thb"];
 export const excludedBangPatterns = [/[^\x20-\x7F]+/];
 
 /** Domains that DuckDuckGo provides patterns for which I wish to exclude. */
-export const excludedDomains = ["www.xe.com"];
+export const excludedDomains = ["", "www.xe.com"];

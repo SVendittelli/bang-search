@@ -46,8 +46,14 @@ export const customBangs = [
   },
   {
     d: "github.com",
-    s: "Starling Bank GitHub Repo Search",
+    s: "Starling Bank GitHub Repo",
     t: "sbr",
+    u: "https://github.com/starlingbank/{{{s}}}",
+  },
+  {
+    d: "github.com",
+    s: "Starling Bank GitHub Repo Search",
+    t: "sbrs",
     u: "https://github.com/search?q=org%3Astarlingbank+{{{s}}}&type=repositories",
   },
   {

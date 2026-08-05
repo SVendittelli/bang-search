@@ -57,8 +57,14 @@ export const bangs = [
   },
   {
     "d": "github.com",
-    "s": "Starling Bank GitHub Repo Search",
+    "s": "Starling Bank GitHub Repo",
     "t": "sbr",
+    "u": "https://github.com/starlingbank/{{{s}}}"
+  },
+  {
+    "d": "github.com",
+    "s": "Starling Bank GitHub Repo Search",
+    "t": "sbrs",
     "u": "https://github.com/search?q=org%3Astarlingbank+{{{s}}}&type=repositories"
   },
   {
@@ -4412,12 +4418,6 @@ export const bangs = [
     "u": "http://apps.splunk.com/apps/#/search/{{{s}}}"
   },
   {
-    "d": "",
-    "s": "App Store on iTunes",
-    "t": "appstore",
-    "u": "/?q=site%3Aitunes.apple.com%2Fus%2Fapp%2F+{{{s}}}"
-  },
-  {
     "d": "www.appvv.com",
     "s": "AppVV",
     "t": "appvv",
@@ -5322,12 +5322,6 @@ export const bangs = [
     "s": "Amazon Subscribe & Save",
     "t": "ass",
     "u": "https://smile.amazon.com/s?url=srs%3D5856181011&field-keywords={{{s}}}"
-  },
-  {
-    "d": "",
-    "s": "DuckDuckGo Assist",
-    "t": "assist",
-    "u": "/?q={{{s}}}&assiston=1"
   },
   {
     "d": "duckduckgo.com",
@@ -6378,12 +6372,6 @@ export const bangs = [
     "s": "Pipl - Profile Search enguine ",
     "t": "BangPeople",
     "u": "https://pipl.com/search/?q={{{s}}}"
-  },
-  {
-    "d": "",
-    "s": "Search all !bangs",
-    "t": "bang",
-    "u": "/bang?q={{{s}}}"
   },
   {
     "d": "duckduckgo.com",
@@ -8384,12 +8372,6 @@ export const bangs = [
     "u": "https://duckduckgo.com/?q={{{s}}}+site%3Aduck.co%2Fblog"
   },
   {
-    "d": "",
-    "s": "Blogspot",
-    "t": "blogspot",
-    "u": "/?q={{{s}}}+site:blogspot.com"
-  },
-  {
     "d": "blogs.splunk.com",
     "s": "blogs.splunk.com",
     "t": "blogs.splunk",
@@ -8922,12 +8904,6 @@ export const bangs = [
     "s": "openSUSE Bugzilla",
     "t": "boo",
     "u": "https://bugzilla.opensuse.org/buglist.cgi?quicksearch={{{s}}}"
-  },
-  {
-    "d": "",
-    "s": "Boost.org",
-    "t": "boost",
-    "u": "/?q={{{s}}}+site:boost.org"
   },
   {
     "d": "getbootstrap.com",
@@ -13778,36 +13754,6 @@ export const bangs = [
     "u": "https://www.postaonline.cz/trackandtrace/-/zasilka/cislo?parcelNumbers={{{s}}}"
   },
   {
-    "d": "",
-    "s": "cppreference.com",
-    "t": "cpp",
-    "u": "/?q={{{s}}}+site:cppreference.com"
-  },
-  {
-    "d": "",
-    "s": "cppreference.com",
-    "t": "cppde",
-    "u": "/?q={{{s}}}+site:de.cppreference.com"
-  },
-  {
-    "d": "",
-    "s": "cppreference.com",
-    "t": "cppr",
-    "u": "/?q={{{s}}}+site:cppreference.com"
-  },
-  {
-    "d": "",
-    "s": "cppreference.com",
-    "t": "cppref",
-    "u": "/?q={{{s}}}+site:cppreference.com"
-  },
-  {
-    "d": "",
-    "s": "cppreference.com",
-    "t": "cppreference",
-    "u": "/?q={{{s}}}+site:cppreference.com"
-  },
-  {
     "d": "www.codeproject.com",
     "s": "Code Project",
     "t": "cproj",
@@ -13980,12 +13926,6 @@ export const bangs = [
     "s": "Creative Cow Library",
     "t": "creativecowlib",
     "u": "http://library.creativecow.net/search.php?q={{{s}}}"
-  },
-  {
-    "d": "",
-    "s": "cppreference.com",
-    "t": "c++ref",
-    "u": "/?q={{{s}}}+site:cppreference.com"
   },
   {
     "d": "www.consumerreports.org",
@@ -14724,12 +14664,6 @@ export const bangs = [
     "s": "Cplusplus.com",
     "t": "cxx",
     "u": "http://www.cplusplus.com/search.do?q={{{s}}}"
-  },
-  {
-    "d": "",
-    "s": "Cyanide and Happiness",
-    "t": "cyanide",
-    "u": "/?q={{{s}}}+site:explosm.net"
   },
   {
     "d": "cyberlearn.hes-so.ch",
@@ -17520,12 +17454,6 @@ export const bangs = [
     "s": "DIY Network",
     "t": "diy",
     "u": "http://www.diynetwork.com/search/{{{s}}}"
-  },
-  {
-    "d": "",
-    "s": "diy.org",
-    "t": "diyorg",
-    "u": "/?q=site:diy.org+{{{s}}}"
   },
   {
     "d": "dizionario.internazionale.it",
@@ -47858,12 +47786,6 @@ export const bangs = [
     "u": "http://searchservice.myspace.com/index.cfm?fuseaction=sitesearch.results&orig=search_Header&origpfc=Splash&type=People&qry={{{s}}}&submit=Search"
   },
   {
-    "d": "",
-    "s": "MySQL.com",
-    "t": "mysql",
-    "u": "/?q={{{s}}}+site:dev.mysql.com"
-  },
-  {
     "d": "www.mytip.co",
     "s": "MyTip",
     "t": "mytip",
@@ -48222,12 +48144,6 @@ export const bangs = [
     "s": "NBA.com",
     "t": "nba",
     "u": "http://www.nba.com/search#/{{{s}}}"
-  },
-  {
-    "d": "",
-    "s": "duckduckgo new !bang",
-    "t": "nbang",
-    "u": "/newbang"
   },
   {
     "d": "www.notebookcheck.com",
@@ -53522,12 +53438,6 @@ export const bangs = [
     "u": "https://podcastlist.ca/?s={{{s}}}"
   },
   {
-    "d": "",
-    "s": "PDFs",
-    "t": "pdf",
-    "u": "/?q={{{s}}}+filetype:pdf"
-  },
-  {
     "d": "www.printfriendly.com",
     "s": "PrintFriendly & PDF",
     "t": "pdfy",
@@ -56108,12 +56018,6 @@ export const bangs = [
     "u": "https://www.probuilds.net/champions/details/{{{s}}}"
   },
   {
-    "d": "",
-    "s": "Processing.org",
-    "t": "processing",
-    "u": "/?q={{{s}}}+site:processing.org"
-  },
-  {
     "d": "community.progress.com",
     "s": "Progress Community",
     "t": "procomm",
@@ -56124,12 +56028,6 @@ export const bangs = [
     "s": "ProCook",
     "t": "procook",
     "u": "http://www.procook.co.uk/shop/search/?searchDep=main+site&searchstr={{{s}}}"
-  },
-  {
-    "d": "",
-    "s": "Processing.org",
-    "t": "proc",
-    "u": "/?q={{{s}}}+site:processing.org"
   },
   {
     "d": "www.producthunt.com",
@@ -60726,24 +60624,6 @@ export const bangs = [
     "s": "Safebooru",
     "t": "safebooru",
     "u": "http://safebooru.org/index.php?page=post&s=list&tags={{{s}}}"
-  },
-  {
-    "d": "",
-    "s": "DDG Safesearch On",
-    "t": "safe",
-    "u": "/?q={{{s}}}&kp=1"
-  },
-  {
-    "d": "",
-    "s": "Safe search off",
-    "t": "safeoff",
-    "u": "/?q={{{s}}}&kp=-2"
-  },
-  {
-    "d": "",
-    "s": "DDG Safesearch On",
-    "t": "safeon",
-    "u": "/?q={{{s}}}&kp=1"
   },
   {
     "d": "safeweb.norton.com",
@@ -74558,12 +74438,6 @@ export const bangs = [
     "u": "https://en.wiki2.org/w/index.php?search={{{s}}}"
   },
   {
-    "d": "",
-    "s": "W3C",
-    "t": "w3c",
-    "u": "/?q={{{s}}}+site:w3.org"
-  },
-  {
     "d": "welovedevs.com",
     "s": "WeLoveDevs",
     "t": "w3d",
@@ -74610,12 +74484,6 @@ export const bangs = [
     "s": "W3C Validator",
     "t": "w3v",
     "u": "https://validator.w3.org/nu/?doc={{{s}}}"
-  },
-  {
-    "d": "",
-    "s": "W3C",
-    "t": "w3",
-    "u": "/?q={{{s}}}+site:w3.org"
   },
   {
     "d": "map.what3words.com",
@@ -79356,12 +79224,6 @@ export const bangs = [
     "s": "XKCD Number",
     "t": "xkcdn",
     "u": "http://xkcd.com/{{{s}}}/"
-  },
-  {
-    "d": "",
-    "s": "xkcd",
-    "t": "xkcd",
-    "u": "/?q={{{s}}}+site:xkcd.com"
   },
   {
     "d": "www.x-kom.pl",
