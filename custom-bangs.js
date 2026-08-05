@@ -195,4 +195,11 @@ export const customBangs = [
     t: ["facebook", "fb"],
     u: "https://www.facebook.com/search/top?q={{{s}}}",
   },
+  // Food Standards Agency
+  {
+    d: "ratings.food.gov.uk",
+    s: "Food Hygiene Rating Scheme (FSA)",
+    t: "fhrs",
+    u: "https://ratings.food.gov.uk/business-search?business-name-search={{{s}}}",
+  },
 ];

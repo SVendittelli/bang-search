@@ -284,6 +284,12 @@ export const bangs = [
     "u": "https://www.facebook.com/search/top?q={{{s}}}"
   },
   {
+    "d": "ratings.food.gov.uk",
+    "s": "Food Hygiene Rating Scheme (FSA)",
+    "t": "fhrs",
+    "u": "https://ratings.food.gov.uk/business-search?business-name-search={{{s}}}"
+  },
+  {
     "d": "www.01net.com",
     "s": "01net",
     "t": "01net",
