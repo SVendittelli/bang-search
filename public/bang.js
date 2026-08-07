@@ -26909,7 +26909,7 @@ export const bangs = [
     "d": "www.geeksforgeeks.org",
     "s": "GeeksforGeeks",
     "t": "geeks",
-    "u": "https://www.geeksforgeeks.org/?s={{{s}}}"
+    "u": "https://www.geeksforgeeks.org/search/?gq={{{s}}}"
   },
   {
     "d": "geeksided.com",
@@ -27299,7 +27299,7 @@ export const bangs = [
     "d": "www.geeksforgeeks.org",
     "s": "geeksforgeeks",
     "t": "gfg",
-    "u": "https://www.geeksforgeeks.org/?q={{{s}}}"
+    "u": "https://www.geeksforgeeks.org/search/?gq={{{s}}}"
   },
   {
     "d": "finance.google.com",
