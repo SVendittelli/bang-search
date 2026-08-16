@@ -208,4 +208,11 @@ export const customBangs = [
     t: "fhrs",
     u: "https://ratings.food.gov.uk/business-search?business-name-search={{{s}}}",
   },
+  // Vinted UK
+  {
+    d: "www.vinted.co.uk",
+    s: "Vinted",
+    t: ["vint", "vinted"],
+    u: "https://www.vinted.co.uk/catalog?search_text={{{s}}}",
+  },
 ];

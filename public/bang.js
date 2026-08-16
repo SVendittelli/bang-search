@@ -296,6 +296,18 @@ export const bangs = [
     "u": "https://ratings.food.gov.uk/business-search?business-name-search={{{s}}}"
   },
   {
+    "d": "www.vinted.co.uk",
+    "s": "Vinted",
+    "t": "vint",
+    "u": "https://www.vinted.co.uk/catalog?search_text={{{s}}}"
+  },
+  {
+    "d": "www.vinted.co.uk",
+    "s": "Vinted",
+    "t": "vinted",
+    "u": "https://www.vinted.co.uk/catalog?search_text={{{s}}}"
+  },
+  {
     "d": "www.01net.com",
     "s": "01net",
     "t": "01net",
