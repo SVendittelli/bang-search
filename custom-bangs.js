@@ -85,7 +85,7 @@ export const customBangs = [
   {
     d: "www.justwatch.com",
     s: "JustWatch UK",
-    t: ["jw", "justwatch"],
+    t: ["j", "jw", "justwatch"],
     u: "https://www.justwatch.com/uk/search?q={{{s}}}",
   },
   // Add npmx

@@ -106,6 +106,12 @@ export const bangs = [
   {
     "d": "www.justwatch.com",
     "s": "JustWatch UK",
+    "t": "j",
+    "u": "https://www.justwatch.com/uk/search?q={{{s}}}"
+  },
+  {
+    "d": "www.justwatch.com",
+    "s": "JustWatch UK",
     "t": "jw",
     "u": "https://www.justwatch.com/uk/search?q={{{s}}}"
   },
@@ -37464,12 +37470,6 @@ export const bangs = [
     "s": "JouwICTvacature",
     "t": "jiv",
     "u": "https://www.jouwictvacature.nl/vacatures?s={{{s}}}"
-  },
-  {
-    "d": "jet.com",
-    "s": "Jet.com",
-    "t": "j",
-    "u": "https://jet.com/search?term={{{s}}}"
   },
   {
     "d": "jinja.pocoo.org",
