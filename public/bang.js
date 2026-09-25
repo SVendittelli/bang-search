@@ -74,6 +74,42 @@ export const bangs = [
     "u": "https://starlingbank.atlassian.net/wiki/search?text={{{s}}}"
   },
   {
+    "d": "demo-management.possiblefs.com",
+    "s": "Demo Management Portal",
+    "t": "mp",
+    "u": "https://demo-management.possiblefs.com/session/{{{s}}}"
+  },
+  {
+    "d": "demo-management.possiblefs.com",
+    "s": "Demo Management Portal",
+    "t": "dmp",
+    "u": "https://demo-management.possiblefs.com/session/{{{s}}}"
+  },
+  {
+    "d": "admin.starlingbank.com",
+    "s": "Prod Management Portal",
+    "t": "pmp",
+    "u": "https://admin.starlingbank.com/session/{{{s}}}"
+  },
+  {
+    "d": "demo-engineering.possiblefs.com",
+    "s": "Demo Engineering Portal",
+    "t": "dep",
+    "u": "https://demo-engineering.possiblefs.com/{{{s}}}"
+  },
+  {
+    "d": "admin.starlingbank.com",
+    "s": "Prod Engineering Portal",
+    "t": "ep",
+    "u": "https://demo-engineering.possiblefs.com/{{{s}}}"
+  },
+  {
+    "d": "admin.starlingbank.com",
+    "s": "Prod Engineering Portal",
+    "t": "pep",
+    "u": "https://demo-engineering.possiblefs.com/{{{s}}}"
+  },
+  {
     "d": "www.amazon.co.uk",
     "s": "Amazon.co.uk",
     "t": "a",
@@ -21600,12 +21636,6 @@ export const bangs = [
     "s": "EpisoDate",
     "t": "epd",
     "u": "https://www.episodate.com/search?q={{{s}}}"
-  },
-  {
-    "d": "everipedia.org",
-    "s": "Everipedia",
-    "t": "ep",
-    "u": "https://everipedia.org/wiki/{{{s}}}"
   },
   {
     "d": "beast-epfl.hosted.exlibrisgroup.com",
@@ -46630,12 +46660,6 @@ export const bangs = [
   {
     "d": "www.menupages.com",
     "s": "MenuPages",
-    "t": "mp",
-    "u": "http://www.menupages.com/restaurants/text/{{{s}}}/all-areas/all-neighborhoods/all-cuisines/"
-  },
-  {
-    "d": "www.menupages.com",
-    "s": "MenuPages",
     "t": "mpny",
     "u": "http://www.menupages.com/restaurants/text/{{{s}}}/all-areas/all-neighborhoods/all-cuisines/"
   },
@@ -53640,12 +53664,6 @@ export const bangs = [
     "s": "Pepperplate",
     "t": "pepperplate",
     "u": "http://www.pepperplate.com/search/?text={{{s}}}"
-  },
-  {
-    "d": "www.python.org",
-    "s": "Python PEP",
-    "t": "pep",
-    "u": "http://www.python.org/dev/peps/pep-{{{s}}}/"
   },
   {
     "d": "forum.grabaperch.com",

@@ -62,6 +62,30 @@ export const customBangs = [
     t: "sbw",
     u: "https://starlingbank.atlassian.net/wiki/search?text={{{s}}}",
   },
+  {
+    d: "demo-management.possiblefs.com",
+    s: "Demo Management Portal",
+    t: ["mp", "dmp"],
+    u: "https://demo-management.possiblefs.com/session/{{{s}}}",
+  },
+  {
+    d: "admin.starlingbank.com",
+    s: "Prod Management Portal",
+    t: "pmp",
+    u: "https://admin.starlingbank.com/session/{{{s}}}",
+  },
+  {
+    d: "demo-engineering.possiblefs.com",
+    s: "Demo Engineering Portal",
+    t: "dep",
+    u: "https://demo-engineering.possiblefs.com/{{{s}}}",
+  },
+  {
+    d: "admin.starlingbank.com",
+    s: "Prod Engineering Portal",
+    t: ["ep", "pep"],
+    u: "https://demo-engineering.possiblefs.com/{{{s}}}",
+  },
   // Use UK amazon
   {
     d: "www.amazon.co.uk",

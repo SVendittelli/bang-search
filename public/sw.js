@@ -1,7 +1,7 @@
 // Service Worker for Bang Search PWA
 // Provides offline functionality and fast loading
 
-const CACHE_NAME = "bang-search-832dc60";
+const CACHE_NAME = "bang-search-5fd6bca";
 const urlsToCache = [
   "/",
   "/bang.js",
