@@ -65231,7 +65231,7 @@ export const bangs = [
     "d": "duckduckgo.com",
     "s": "SS64",
     "t": "ss64",
-    "u": "http://duckduckgo.com/?q={{{s}}}+site:www.ss64.com"
+    "u": "http://duckduckgo.com/?q={{{s}}}+site:ss64.com"
   },
   {
     "d": "ssaft.com",
