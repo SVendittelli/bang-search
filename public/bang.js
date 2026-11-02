@@ -158,6 +158,12 @@ export const bangs = [
     "u": "https://www.justwatch.com/uk/search?q={{{s}}}"
   },
   {
+    "d": "www.bbfc.co.uk",
+    "s": "British Board of Film Classification",
+    "t": "bbfc",
+    "u": "https://www.bbfc.co.uk/search?q={{{s}}}"
+  },
+  {
     "d": "npmx",
     "s": "npmx",
     "t": "npmx",
@@ -348,6 +354,12 @@ export const bangs = [
     "s": "Vinted",
     "t": "vinted",
     "u": "https://www.vinted.co.uk/catalog?search_text={{{s}}}"
+  },
+  {
+    "d": "hardcover.app",
+    "s": "Hardcover",
+    "t": "hardcover",
+    "u": "https://hardcover.app/search?q={{{s}}}"
   },
   {
     "d": "www.01net.com",
@@ -6714,12 +6726,6 @@ export const bangs = [
     "s": "BlackBerry Developer",
     "t": "bbdev",
     "u": "https://developer.blackberry.com/native/search/?search={{{s}}}&searchaction=Search"
-  },
-  {
-    "d": "www.bbfc.co.uk",
-    "s": "British Board of Film Classification",
-    "t": "bbfc",
-    "u": "http://www.bbfc.co.uk/search/releases/{{{s}}}"
   },
   {
     "d": "www.bing.com",

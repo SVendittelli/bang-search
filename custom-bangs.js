@@ -239,4 +239,11 @@ export const customBangs = [
     t: ["vint", "vinted"],
     u: "https://www.vinted.co.uk/catalog?search_text={{{s}}}",
   },
+  // Hardcover
+  {
+    d: "hardcover.app",
+    s: "Hardcover",
+    t: "hardcover",
+    u: "https://hardcover.app/search?q={{{s}}}",
+  },
 ];
