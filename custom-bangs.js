@@ -112,6 +112,12 @@ export const customBangs = [
     t: ["j", "jw", "justwatch"],
     u: "https://www.justwatch.com/uk/search?q={{{s}}}",
   },
+  {
+    d: "www.bbfc.co.uk",
+    s: "British Board of Film Classification",
+    t: "bbfc",
+    u: "https://www.bbfc.co.uk/search?q={{{s}}}",
+  },
   // Add npmx
   {
     d: "npmx",
