@@ -2978,10 +2978,10 @@ export const bangs = [
     "u": "https://www.alo.bg/searchq/?q={{{s}}}"
   },
   {
-    "d": "www.archlinux.org",
+    "d": "archlinux.org",
     "s": "Arch Linux Packages",
     "t": "alp",
-    "u": "https://www.archlinux.org/packages/?sort=&q={{{s}}}"
+    "u": "https://archlinux.org/packages/?sort=&q={{{s}}}"
   },
   {
     "d": "www.wolframalpha.com",
@@ -2999,7 +2999,7 @@ export const bangs = [
     "d": "alternativeto.net",
     "s": "alternativeTo",
     "t": "alt",
-    "u": "http://alternativeto.net/SearchResult.aspx?search={{{s}}}"
+    "u": "https://alternativeto.net/browse/search/?q={{{s}}}"
   },
   {
     "d": "www.alternate.be",
@@ -4214,10 +4214,10 @@ export const bangs = [
     "u": "https://apkpure.com/search?q={{{s}}}"
   },
   {
-    "d": "www.archlinux.org",
+    "d": "archlinux.org",
     "s": "Arch Package Search",
     "t": "apkg",
-    "u": "https://www.archlinux.org/packages/?sort=&q={{{s}}}&maintainer=&flagged="
+    "u": "https://archlinux.org/packages/?sort=&q={{{s}}}&maintainer=&flagged="
   },
   {
     "d": "www.apkmirror.com",
@@ -4814,10 +4814,10 @@ export const bangs = [
     "u": "https://www.archlinux.org/packages/?q={{{s}}}"
   },
   {
-    "d": "www.archlinux.org",
+    "d": "archlinux.org",
     "s": "Arch Linux Packages",
     "t": "archpkg",
-    "u": "https://www.archlinux.org/packages/?sort=&q={{{s}}}&maintainer=&flagged="
+    "u": "https://archlinux.org/packages/?sort=&q={{{s}}}&maintainer=&flagged="
   },
   {
     "d": "wiki.archlinux.org",
@@ -5747,7 +5747,7 @@ export const bangs = [
     "d": "aur.archlinux.org",
     "s": "Arch User Repository",
     "t": "aur",
-    "u": "https://aur.archlinux.org/packages/?K={{{s}}}"
+    "u": "https://aur.archlinux.org/packages?K={{{s}}}"
   },
   {
     "d": "aur.archlinux.org",
@@ -6443,7 +6443,7 @@ export const bangs = [
     "d": "duckduckgo.com",
     "s": "Search all !bangs",
     "t": "bangs",
-    "u": "https://duckduckgo.com/bang?q={{{s}}}"
+    "u": "https://duckduckgo.com/bangs?q={{{s}}}"
   },
   {
     "d": "banned.video",
@@ -15305,7 +15305,7 @@ export const bangs = [
     "d": "duckduckgo.com",
     "s": "DuckDuckGo",
     "t": "dax",
-    "u": "http://duckduckgo.com/?q={{{s}}}"
+    "u": "https://duckduckgo.com/?q={{{s}}}"
   },
   {
     "d": "duckduckgo.com",
@@ -15521,7 +15521,7 @@ export const bangs = [
     "d": "www.dict.cc",
     "s": "dict.cc",
     "t": "dcc",
-    "u": "http://www.dict.cc/?s={{{s}}}"
+    "u": "https://www.dict.cc/?s={{{s}}}"
   },
   {
     "d": "www.dccomics.com",
@@ -15683,7 +15683,7 @@ export const bangs = [
     "d": "duckduckgo.com",
     "s": "DuckDuckGo",
     "t": "ddg",
-    "u": "http://duckduckgo.com/?q={{{s}}}"
+    "u": "https://duckduckgo.com/?q={{{s}}}"
   },
   {
     "d": "duckduckgo.com",
@@ -16187,7 +16187,7 @@ export const bangs = [
     "d": "www.dict.cc",
     "s": "dict.cc free dictionary (de<>en)",
     "t": "deen",
-    "u": "http://www.dict.cc/?s={{{s}}}"
+    "u": "https://www.dict.cc/?s={{{s}}}"
   },
   {
     "d": "deeo.dict.cc",
@@ -16301,7 +16301,7 @@ export const bangs = [
     "d": "www.thefreedictionary.com",
     "s": "The Free Dictionary",
     "t": "define",
-    "u": "http://www.thefreedictionary.com/{{{s}}}"
+    "u": "https://www.thefreedictionary.com/{{{s}}}"
   },
   {
     "d": "defkey.com",
@@ -16319,7 +16319,7 @@ export const bangs = [
     "d": "www.thefreedictionary.com",
     "s": "The Free Dictionary",
     "t": "def",
-    "u": "http://www.thefreedictionary.com/{{{s}}}"
+    "u": "https://www.thefreedictionary.com/{{{s}}}"
   },
   {
     "d": "dict.tu-chemnitz.de",
@@ -16973,7 +16973,7 @@ export const bangs = [
     "d": "www.merriam-webster.com",
     "s": "http://www.merriam-webster.com/",
     "t": "dic",
-    "u": "http://www.merriam-webster.com/dictionary/{{{s}}}"
+    "u": "https://www.merriam-webster.com/dictionary/{{{s}}}"
   },
   {
     "d": "www.dicionarioinformal.com.br",
@@ -17051,7 +17051,7 @@ export const bangs = [
     "d": "www.dict.cc",
     "s": "dict.cc",
     "t": "dict.cc",
-    "u": "http://www.dict.cc/?s={{{s}}}"
+    "u": "https://www.dict.cc/?s={{{s}}}"
   },
   {
     "d": "www.dict.org",
@@ -17075,7 +17075,7 @@ export const bangs = [
     "d": "www.thefreedictionary.com",
     "s": "The Free Dictionary",
     "t": "dictionary",
-    "u": "http://www.thefreedictionary.com/{{{s}}}"
+    "u": "https://www.thefreedictionary.com/{{{s}}}"
   },
   {
     "d": "dict.leo.org",
@@ -17384,10 +17384,10 @@ export const bangs = [
     "u": "https://search.disconnect.me/searchTerms/search?query={{{s}}}&option=Images"
   },
   {
-    "d": "discordapp.com",
+    "d": "discord.com",
     "s": "Discord Invite",
     "t": "discord",
-    "u": "https://discordapp.com/invite/{{{s}}}"
+    "u": "https://discord.com/invite/{{{s}}}"
   },
   {
     "d": "discountoffice.co.nz",
@@ -17606,10 +17606,10 @@ export const bangs = [
     "u": "http://www.digikey.ca/product-search/en?x=-1308&y=-74&lang=en&site=ca&KeyWords={{{s}}} "
   },
   {
-    "d": "store.docker.com",
+    "d": "hub.docker.com",
     "s": "docker hub",
     "t": "dk",
-    "u": "https://store.docker.com/search?q={{{s}}}"
+    "u": "https://hub.docker.com/search?q={{{s}}}"
   },
   {
     "d": "www.digikey.es",
@@ -17642,10 +17642,10 @@ export const bangs = [
     "u": "https://diksiyonaryo.ph/search/{{{s}}}"
   },
   {
-    "d": "store.docker.com",
+    "d": "hub.docker.com",
     "s": "Docker Store",
     "t": "dkstore",
-    "u": "https://store.docker.com/search?q={{{s}}}"
+    "u": "https://hub.docker.com/search?q={{{s}}}"
   },
   {
     "d": "www.dokuwiki.org",
@@ -17996,10 +17996,10 @@ export const bangs = [
     "u": "https://www.doctorofcredit.com/?s={{{s}}}"
   },
   {
-    "d": "store.docker.com",
+    "d": "hub.docker.com",
     "s": "Docker Store",
     "t": "docker",
-    "u": "https://store.docker.com/search?q={{{s}}}"
+    "u": "https://hub.docker.com/search?q={{{s}}}"
   },
   {
     "d": "hub.docker.com",
@@ -19085,7 +19085,7 @@ export const bangs = [
     "d": "www.thefreedictionary.com",
     "s": "The Free Dictionary",
     "t": "d",
-    "u": "http://www.thefreedictionary.com/{{{s}}}"
+    "u": "https://www.thefreedictionary.com/{{{s}}}"
   },
   {
     "d": "deskthority.net",
@@ -19175,7 +19175,7 @@ export const bangs = [
     "d": "duckduckgo.com",
     "s": "DuckDuckGo",
     "t": "?",
-    "u": "http://duckduckgo.com/?q={{{s}}}"
+    "u": "https://duckduckgo.com/?q={{{s}}}"
   },
   {
     "d": "duckduckgo.com",
@@ -19193,7 +19193,7 @@ export const bangs = [
     "d": "www.duden.de",
     "s": "Duden",
     "t": "duden",
-    "u": "http://www.duden.de/suchen/dudenonline/{{{s}}}"
+    "u": "https://www.duden.de/suchen/dudenonline/{{{s}}}"
   },
   {
     "d": "www.duedil.com",
@@ -19751,7 +19751,7 @@ export const bangs = [
     "d": "www.ebay.co.uk",
     "s": "ebay.co.uk",
     "t": "ebayuk",
-    "u": "https://www.ebay.co.uk/sch/items/?_nkw={{{s}}}"
+    "u": "https://www.ebay.co.uk/sch/i.html?_nkw={{{s}}}"
   },
   {
     "d": "www.befr.ebay.be",
@@ -19967,7 +19967,7 @@ export const bangs = [
     "d": "www.ebay.co.uk",
     "s": "ebay.co.uk",
     "t": "ebuk",
-    "u": "https://www.ebay.co.uk/sch/items/?_nkw={{{s}}}"
+    "u": "https://www.ebay.co.uk/sch/i.html?_nkw={{{s}}}"
   },
   {
     "d": "www.ebuyer.com",
@@ -22289,7 +22289,7 @@ export const bangs = [
     "d": "www.ebay.co.uk",
     "s": "ebay.co.uk",
     "t": "euk",
-    "u": "https://www.ebay.co.uk/sch/items/?_nkw={{{s}}}"
+    "u": "https://www.ebay.co.uk/sch/i.html?_nkw={{{s}}}"
   },
   {
     "d": "www.ebay.co.uk",
@@ -23729,7 +23729,7 @@ export const bangs = [
     "d": "www.flickr.com",
     "s": "Flickr",
     "t": "f",
-    "u": "http://www.flickr.com/search/?q={{{s}}}"
+    "u": "https://www.flickr.com/search/?q={{{s}}}"
   },
   {
     "d": "fastfoodmusic.com",
@@ -26111,7 +26111,7 @@ export const bangs = [
     "d": "www.google.com.au",
     "s": "Google Australia",
     "t": "ga",
-    "u": "http://www.google.com.au/search?q={{{s}}}"
+    "u": "https://www.google.com.au/search?q={{{s}}}"
   },
   {
     "d": "gethuman.com",
@@ -26435,7 +26435,7 @@ export const bangs = [
     "d": "www.google.com.au",
     "s": "Google AU",
     "t": "gau",
-    "u": "http://www.google.com.au/search?&source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
+    "u": "https://www.google.com.au/search?&source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
   },
   {
     "d": "wirtschaftslexikon.gabler.de",
@@ -26483,7 +26483,7 @@ export const bangs = [
     "d": "www.google.be",
     "s": "Google BE",
     "t": "gbe",
-    "u": "http://www.google.be/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
+    "u": "https://www.google.be/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
   },
   {
     "d": "en.glosbe.com",
@@ -26555,7 +26555,7 @@ export const bangs = [
     "d": "www.google.com.br",
     "s": "Google BR",
     "t": "gbr",
-    "u": "http://www.google.com.br/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
+    "u": "https://www.google.com.br/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
   },
   {
     "d": "gigablast.com",
@@ -26579,7 +26579,7 @@ export const bangs = [
     "d": "www.google.ca",
     "s": "Google CA",
     "t": "gca",
-    "u": "http://www.google.ca/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
+    "u": "https://www.google.ca/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
   },
   {
     "d": "calendar.google.com",
@@ -26645,7 +26645,7 @@ export const bangs = [
     "d": "www.google.cl",
     "s": "Google CL",
     "t": "gcl",
-    "u": "http://www.google.cl/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
+    "u": "https://www.google.cl/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
   },
   {
     "d": "www.gcmap.com",
@@ -27593,7 +27593,7 @@ export const bangs = [
     "d": "www.google.com.hk",
     "s": "Google HK",
     "t": "ghk",
-    "u": "http://www.google.com.hk/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
+    "u": "https://www.google.com.hk/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
   },
   {
     "d": "www.groenehartscholen.nl",
@@ -27848,22 +27848,22 @@ export const bangs = [
     "u": "https://www.google.co.il/#q={{{s}}}"
   },
   {
-    "d": "google.com",
+    "d": "www.google.com",
     "s": "Google Images",
     "t": "gimages",
-    "u": "http://google.com/search?tbm=isch&q={{{s}}}&tbs=imgo:1"
+    "u": "https://www.google.com/search?q={{{s}}}&tbs=imgo:1&udm=2"
   },
   {
     "d": "www.google.com",
     "s": "Google Images",
     "t": "gimg",
-    "u": "https://www.google.com/search?tbm=isch&q={{{s}}}&tbs=imgo:1"
+    "u": "https://www.google.com/search?q={{{s}}}&tbs=imgo:1&udm=2"
   },
   {
-    "d": "google.com",
+    "d": "www.google.com",
     "s": "Google Images",
     "t": "gim",
-    "u": "https://google.com/search?tbm=isch&q={{{s}}}&tbs=imgo:1"
+    "u": "https://www.google.com/search?q={{{s}}}&tbs=imgo:1&udm=2"
   },
   {
     "d": "www.google.co.in",
@@ -27905,7 +27905,7 @@ export const bangs = [
     "d": "www.google.com",
     "s": "Google Image Search",
     "t": "gis",
-    "u": "https://www.google.com/search?site=imghp&tbm=isch&q={{{s}}}"
+    "u": "https://www.google.com/search?site=imghp&q={{{s}}}&udm=2"
   },
   {
     "d": "www.google.com",
@@ -27953,7 +27953,7 @@ export const bangs = [
     "d": "github.com",
     "s": "GitHub.com",
     "t": "github",
-    "u": "http://github.com/search?q={{{s}}}&type=Everything&repo=&langOverride=&start_value=1"
+    "u": "https://github.com/search?q={{{s}}}&type=Everything&repo=&langOverride=&start_value=1"
   },
   {
     "d": "help.github.com",
@@ -28055,7 +28055,7 @@ export const bangs = [
     "d": "www.google.co.jp",
     "s": "Google Japan",
     "t": "gj",
-    "u": "http://www.google.co.jp/search?q={{{s}}}"
+    "u": "https://www.google.co.jp/search?q={{{s}}}"
   },
   {
     "d": "www.google.co.jp",
@@ -28298,10 +28298,10 @@ export const bangs = [
     "u": "https://support.google.com/search?q={{{s}}}"
   },
   {
-    "d": "maps.google.com",
+    "d": "www.google.com",
     "s": "Google Maps",
     "t": "gmap",
-    "u": "http://maps.google.com/maps?q={{{s}}}"
+    "u": "https://www.google.com/maps?q={{{s}}}"
   },
   {
     "d": "maps.google.com",
@@ -28571,7 +28571,7 @@ export const bangs = [
     "d": "www.google.nl",
     "s": "Google NL",
     "t": "gnl",
-    "u": "http://www.google.nl/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
+    "u": "https://www.google.nl/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
   },
   {
     "d": "globalnewlightofmyanmar.com",
@@ -28919,7 +28919,7 @@ export const bangs = [
     "d": "www.goodreads.com",
     "s": "GoodReads",
     "t": "goodreads",
-    "u": "http://www.goodreads.com/search/search?search_type=books&search[query]={{{s}}}"
+    "u": "https://www.goodreads.com/search?q={{{s}}}"
   },
   {
     "d": "www.goodreads.com",
@@ -28970,16 +28970,16 @@ export const bangs = [
     "u": "https://www.google.com/search?q={{{s}}}"
   },
   {
-    "d": "google.com",
+    "d": "www.google.com",
     "s": "Google Images",
     "t": "googleimages",
-    "u": "http://google.com/search?tbm=isch&q={{{s}}}&tbs=imgo:1"
+    "u": "https://www.google.com/search?q={{{s}}}&tbs=imgo:1&udm=2"
   },
   {
-    "d": "google.com",
+    "d": "www.google.com",
     "s": "Google Image",
     "t": "googleimg",
-    "u": "https://google.com/search?tbm=isch&q={{{s}}}&tbs=imgo:1"
+    "u": "https://www.google.com/search?q={{{s}}}&tbs=imgo:1&udm=2"
   },
   {
     "d": "www.google.co.in",
@@ -29006,16 +29006,16 @@ export const bangs = [
     "u": "https://www.google.co.kr/?gws_rd=cr&ei=GEnlVfT8BMOJuQT8tLPYDg={{{s}}}"
   },
   {
-    "d": "maps.google.com",
+    "d": "www.google.com",
     "s": "Google Maps",
     "t": "googlemap",
-    "u": "http://maps.google.com/maps?q={{{s}}}"
+    "u": "https://www.google.com/maps?q={{{s}}}"
   },
   {
-    "d": "maps.google.com",
+    "d": "www.google.com",
     "s": "Google Maps",
     "t": "googlemaps",
-    "u": "http://maps.google.com/maps?q={{{s}}}"
+    "u": "https://www.google.com/maps?q={{{s}}}"
   },
   {
     "d": "www.google.com.au",
@@ -29642,10 +29642,10 @@ export const bangs = [
     "u": "https://www.grecoantico.com/dizionario-greco-antico.php?parola={{{s}}}"
   },
   {
-    "d": "google.com",
+    "d": "www.google.com",
     "s": "Reddit Google search",
     "t": "greddit",
-    "u": "https://google.com/search?q=site%3Areddit.com+{{{s}}}"
+    "u": "https://www.google.com/search?q=site%3Areddit.com+{{{s}}}"
   },
   {
     "d": "www.perseus.tufts.edu",
@@ -31793,7 +31793,7 @@ export const bangs = [
     "d": "www.google.com.tw",
     "s": "Google TW",
     "t": "gtw",
-    "u": "http://www.google.com.tw/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
+    "u": "https://www.google.com.tw/search?source=hp&q={{{s}}}&meta=&aq=f&aqi=g10&aql=&oq=&gs_rfai="
   },
   {
     "d": "growtopia.wikia.com",
@@ -32129,7 +32129,7 @@ export const bangs = [
     "d": "www.google.com",
     "s": "Google Video",
     "t": "gv",
-    "u": "https://www.google.com/search?tbm=vid&q={{{s}}}"
+    "u": "https://www.google.com/search?q={{{s}}}&udm=7"
   },
   {
     "d": "docs.google.com",
@@ -33371,7 +33371,7 @@ export const bangs = [
     "d": "www.history.com",
     "s": "History",
     "t": "history",
-    "u": "http://www.history.com/search?search-field={{{s}}}&x=0&y=0"
+    "u": "https://www.history.com/search?search-field={{{s}}}&x=0&y=0"
   },
   {
     "d": "hitchwiki.org",
@@ -33467,7 +33467,7 @@ export const bangs = [
     "d": "howlongtobeat.com",
     "s": "How Long to Beat",
     "t": "hlb",
-    "u": "http://howlongtobeat.com/?q={{{s}}}"
+    "u": "https://howlongtobeat.com/?q={{{s}}}"
   },
   {
     "d": "horalectura.blogspot.com",
@@ -33503,7 +33503,7 @@ export const bangs = [
     "d": "howlongtobeat.com",
     "s": "How Long To Beat",
     "t": "hltb",
-    "u": "http://howlongtobeat.com/?q={{{s}}}"
+    "u": "https://howlongtobeat.com/?q={{{s}}}"
   },
   {
     "d": "www.hltv.org",
@@ -37487,7 +37487,7 @@ export const bangs = [
     "d": "jisho.org",
     "s": "Jisho",
     "t": "jisho",
-    "u": "http://jisho.org/search/{{{s}}}"
+    "u": "https://jisho.org/search/{{{s}}}"
   },
   {
     "d": "www.jobintree.com",
@@ -39167,7 +39167,7 @@ export const bangs = [
     "d": "knowyourmeme.com",
     "s": "Know Your Meme",
     "t": "knowyourmeme",
-    "u": "http://knowyourmeme.com/search?utf8=%E2%9C%93&q={{{s}}}"
+    "u": "https://knowyourmeme.com/search?utf8=%E2%9C%93&q={{{s}}}"
   },
   {
     "d": "www.kobo.com",
@@ -39797,7 +39797,7 @@ export const bangs = [
     "d": "knowyourmeme.com",
     "s": "Know Your Meme",
     "t": "kym",
-    "u": "http://knowyourmeme.com/search?utf8=%E2%9C%93&q={{{s}}}"
+    "u": "https://knowyourmeme.com/search?utf8=%E2%9C%93&q={{{s}}}"
   },
   {
     "d": "search.kyobobook.co.kr",
@@ -44135,7 +44135,7 @@ export const bangs = [
     "d": "www.metacritic.com",
     "s": "Metacritic",
     "t": "mc",
-    "u": "http://www.metacritic.com/search/all/{{{s}}}/results"
+    "u": "https://www.metacritic.com/search/all/{{{s}}}/results"
   },
   {
     "d": "www.cardmarket.com",
@@ -44723,7 +44723,7 @@ export const bangs = [
     "d": "knowyourmeme.com",
     "s": "Know Your Meme",
     "t": "meme",
-    "u": "http://knowyourmeme.com/search?utf8=%E2%9C%93&q={{{s}}}"
+    "u": "https://knowyourmeme.com/search?utf8=%E2%9C%93&q={{{s}}}"
   },
   {
     "d": "timetravel.mementoweb.org",
@@ -44885,7 +44885,7 @@ export const bangs = [
     "d": "www.merriam-webster.com",
     "s": "Merriam-Webster",
     "t": "merriamwebster",
-    "u": "http://www.merriam-webster.com/dictionary/{{{s}}}"
+    "u": "https://www.merriam-webster.com/dictionary/{{{s}}}"
   },
   {
     "d": "www.ncbi.nlm.nih.gov",
@@ -44945,7 +44945,7 @@ export const bangs = [
     "d": "www.metacritic.com",
     "s": "Metacritic",
     "t": "metacritic",
-    "u": "http://www.metacritic.com/search/all/{{{s}}}/results"
+    "u": "https://www.metacritic.com/search/all/{{{s}}}/results"
   },
   {
     "d": "www.metaculus.com",
@@ -47525,7 +47525,7 @@ export const bangs = [
     "d": "www.merriam-webster.com",
     "s": "Merriam-Webster Dictionary",
     "t": "mwd",
-    "u": "http://www.merriam-webster.com/dictionary/{{{s}}}"
+    "u": "https://www.merriam-webster.com/dictionary/{{{s}}}"
   },
   {
     "d": "www.merriam-webster.com",
@@ -47555,7 +47555,7 @@ export const bangs = [
     "d": "www.merriam-webster.com",
     "s": "Merriam-Webster Dictionary",
     "t": "mw",
-    "u": "http://www.merriam-webster.com/dictionary/{{{s}}}"
+    "u": "https://www.merriam-webster.com/dictionary/{{{s}}}"
   },
   {
     "d": "meta.wikimedia.org",
@@ -48149,7 +48149,7 @@ export const bangs = [
     "d": "search.naver.com",
     "s": "Naver",
     "t": "naver",
-    "u": "http://search.naver.com/search.naver?where=nexearch&sm=osd&ie={inputEncoding}&query={{{s}}}"
+    "u": "https://search.naver.com/search.naver?where=nexearch&sm=osd&ie={inputEncoding}&query={{{s}}}"
   },
   {
     "d": "beta.map.naver.com",
@@ -49079,13 +49079,13 @@ export const bangs = [
     "d": "www.nicovideo.jp",
     "s": "Nico Nico Douga",
     "t": "nico",
-    "u": "http://www.nicovideo.jp/search/{{{s}}}"
+    "u": "https://www.nicovideo.jp/search/{{{s}}}"
   },
   {
     "d": "www.nicovideo.jp",
     "s": "Niconico",
     "t": "niconico",
-    "u": "http://www.nicovideo.jp/search/{{{s}}}"
+    "u": "https://www.nicovideo.jp/search/{{{s}}}"
   },
   {
     "d": "niebezpiecznik.pl",
@@ -52658,10 +52658,10 @@ export const bangs = [
     "u": "https://www.prothomalo.com/search/?q={{{s}}}"
   },
   {
-    "d": "www.archlinux.org",
+    "d": "archlinux.org",
     "s": "Arch Linux Package Database",
     "t": "pac",
-    "u": "https://www.archlinux.org/packages/?sort=&q={{{s}}}&maintainer=&flagged="
+    "u": "https://archlinux.org/packages/?sort=&q={{{s}}}&maintainer=&flagged="
   },
   {
     "d": "www.pacificpkg.com",
@@ -52712,10 +52712,10 @@ export const bangs = [
     "u": "https://www.packtpub.com/all/?search={{{s}}} "
   },
   {
-    "d": "www.archlinux.org",
+    "d": "archlinux.org",
     "s": "Arch Package Repo",
     "t": "pacman",
-    "u": "https://www.archlinux.org/packages/?sort=&q={{{s}}}"
+    "u": "https://archlinux.org/packages/?sort=&q={{{s}}}"
   },
   {
     "d": "www.pacogames.com",
@@ -54308,10 +54308,10 @@ export const bangs = [
     "u": "http://dictionary.pinpinchinese.com/search/t/{{{s}}}"
   },
   {
-    "d": "pinterest.com",
+    "d": "www.pinterest.com",
     "s": "Pinterest",
     "t": "pin",
-    "u": "http://pinterest.com/search/pins/?q={{{s}}}"
+    "u": "https://www.pinterest.com/search/pins/?q={{{s}}}"
   },
   {
     "d": "pinside.com",
@@ -54437,7 +54437,7 @@ export const bangs = [
     "d": "www.pixiv.net",
     "s": "Pixiv",
     "t": "pixiv",
-    "u": "http://www.pixiv.net/search.php?word={{{s}}}"
+    "u": "https://www.pixiv.net/tags/{{{s}}}/artworks"
   },
   {
     "d": "shop.pixbreak.com",
@@ -54470,10 +54470,10 @@ export const bangs = [
     "u": "https://pikabu.ru/search.php?q={{{s}}}"
   },
   {
-    "d": "www.archlinux.org",
+    "d": "archlinux.org",
     "s": "Arch Linux Packages",
     "t": "pkg",
-    "u": "https://www.archlinux.org/packages/?sort=&q={{{s}}}"
+    "u": "https://archlinux.org/packages/?sort=&q={{{s}}}"
   },
   {
     "d": "packageradar.com",
@@ -60191,7 +60191,7 @@ export const bangs = [
     "d": "www.rottentomatoes.com",
     "s": "Rotten Tomatoes",
     "t": "rt",
-    "u": "https://www.rottentomatoes.com/search/?search={{{s}}}"
+    "u": "https://www.rottentomatoes.com/search?search={{{s}}}"
   },
   {
     "d": "www.rts.ch",
@@ -65759,7 +65759,7 @@ export const bangs = [
     "d": "store.steampowered.com",
     "s": "Steam",
     "t": "steam",
-    "u": "http://store.steampowered.com/search/?term={{{s}}}"
+    "u": "https://store.steampowered.com/search/?term={{{s}}}"
   },
   {
     "d": "www.steamtrades.com",
@@ -65825,7 +65825,7 @@ export const bangs = [
     "d": "store.steampowered.com",
     "s": "Steam",
     "t": "ste",
-    "u": "http://store.steampowered.com/search/?term={{{s}}}"
+    "u": "https://store.steampowered.com/search/?term={{{s}}}"
   },
   {
     "d": "stackexchange.com",
@@ -68063,7 +68063,7 @@ export const bangs = [
     "d": "tenor.com",
     "s": "tenor",
     "t": "tenor",
-    "u": "https://tenor.com/search/{{{s}}}"
+    "u": "https://tenor.com/search/{{{s}}}-gifs"
   },
   {
     "d": "www.tensorflow.org",
@@ -68333,7 +68333,7 @@ export const bangs = [
     "d": "www.thefreedictionary.com",
     "s": "The Free Dictionary",
     "t": "tfd",
-    "u": "http://www.thefreedictionary.com/{{{s}}}"
+    "u": "https://www.thefreedictionary.com/{{{s}}}"
   },
   {
     "d": "forum.tfes.org",
@@ -68561,7 +68561,7 @@ export const bangs = [
     "d": "www.thefreedictionary.com",
     "s": "The Free Dictionary",
     "t": "thefreedictionary",
-    "u": "http://www.thefreedictionary.com/{{{s}}}"
+    "u": "https://www.thefreedictionary.com/{{{s}}}"
   },
   {
     "d": "www.thefunny.in",
@@ -68723,7 +68723,7 @@ export const bangs = [
     "d": "www.thesaurus.com",
     "s": "Thesaurus",
     "t": "thes",
-    "u": "http://www.thesaurus.com/browse/{{{s}}}"
+    "u": "https://www.thesaurus.com/browse/{{{s}}}"
   },
   {
     "d": "www.thetoptens.com",
@@ -70247,7 +70247,7 @@ export const bangs = [
     "d": "www.thesaurus.com",
     "s": "Thesaurus at Reference.com",
     "t": "tref",
-    "u": "http://www.thesaurus.com/browse/{{{s}}}"
+    "u": "https://www.thesaurus.com/browse/{{{s}}}"
   },
   {
     "d": "trello.com",
@@ -70607,7 +70607,7 @@ export const bangs = [
     "d": "www.thesaurus.com",
     "s": "Thesaurus.com",
     "t": "t",
-    "u": "http://www.thesaurus.com/browse/{{{s}}}"
+    "u": "https://www.thesaurus.com/browse/{{{s}}}"
   },
   {
     "d": "www.tutti.ch",
@@ -71126,10 +71126,10 @@ export const bangs = [
     "u": "https://www.twitch.tv/{{{s}}}/chat?popout="
   },
   {
-    "d": "twitch.tv",
+    "d": "www.twitch.tv",
     "s": "Twitch Channel",
     "t": "twitchc",
-    "u": "https://twitch.tv/{{{s}}}"
+    "u": "https://www.twitch.tv/{{{s}}}"
   },
   {
     "d": "twitchemotes.com",
@@ -71150,10 +71150,10 @@ export const bangs = [
     "u": "https://player.twitch.tv/?volume=0.5&channel={{{s}}}"
   },
   {
-    "d": "twitch.tv",
+    "d": "www.twitch.tv",
     "s": "Twitch.tv",
     "t": "twitch",
-    "u": "https://twitch.tv/{{{s}}}"
+    "u": "https://www.twitch.tv/{{{s}}}"
   },
   {
     "d": "twitter.com",
@@ -72509,7 +72509,7 @@ export const bangs = [
     "d": "www.urbandictionary.com",
     "s": "Urban Dictionary",
     "t": "urbandictionary",
-    "u": "http://www.urbandictionary.com/define.php?term={{{s}}}"
+    "u": "https://www.urbandictionary.com/define.php?term={{{s}}}"
   },
   {
     "d": "urbaneffect.net",
@@ -72521,7 +72521,7 @@ export const bangs = [
     "d": "www.urbandictionary.com",
     "s": "Urban Dictionary",
     "t": "urban",
-    "u": "http://www.urbandictionary.com/define.php?term={{{s}}}"
+    "u": "https://www.urbandictionary.com/define.php?term={{{s}}}"
   },
   {
     "d": "www.urbanoutfitters.com",
@@ -72821,7 +72821,7 @@ export const bangs = [
     "d": "www.urbandictionary.com",
     "s": "Urban Dictionary",
     "t": "u",
-    "u": "http://www.urbandictionary.com/define.php?term={{{s}}}"
+    "u": "https://www.urbandictionary.com/define.php?term={{{s}}}"
   },
   {
     "d": "duckduckgo.com",
@@ -75533,7 +75533,7 @@ export const bangs = [
     "d": "es.wikipedia.org",
     "s": "Wikipedia (ES)",
     "t": "wes",
-    "u": "http://es.wikipedia.org/wiki/Special:Search?search={{{s}}}&go=Go"
+    "u": "https://es.wikipedia.org/wiki/Special:Search?search={{{s}}}&go=Go"
   },
   {
     "d": "en.wikipedia.org",
@@ -75581,7 +75581,7 @@ export const bangs = [
     "d": "en.wikipedia.org",
     "s": "Wikipedia",
     "t": "we",
-    "u": "http://en.wikipedia.org/wiki/{{{s}}}"
+    "u": "https://en.wikipedia.org/wiki/{{{s}}}"
   },
   {
     "d": "fa.wikipedia.org",
@@ -76205,7 +76205,7 @@ export const bangs = [
     "d": "de.wikipedia.org",
     "s": "Wikipedia",
     "t": "wikide",
-    "u": "http://de.wikipedia.org/w/index.php?search={{{s}}} "
+    "u": "https://de.wikipedia.org/w/index.php?search={{{s}}}"
   },
   {
     "d": "www.wikidex.net",
@@ -76337,7 +76337,7 @@ export const bangs = [
     "d": "de.wikipedia.org",
     "s": "Wikipedia Deutschland",
     "t": "wikipediade",
-    "u": "http://de.wikipedia.org/w/index.php?search={{{s}}}"
+    "u": "https://de.wikipedia.org/w/index.php?search={{{s}}}"
   },
   {
     "d": "it.wikipedia.org",
@@ -76625,7 +76625,7 @@ export const bangs = [
     "d": "en.wiktionary.org",
     "s": "Wiktionary",
     "t": "wikten",
-    "u": "http://en.wiktionary.org/wiki/Special:Search?search={{{s}}}&go=Define"
+    "u": "https://en.wiktionary.org/wiki/Special:Search?search={{{s}}}&go=Define"
   },
   {
     "d": "eo.wiktionary.org",
@@ -76661,7 +76661,7 @@ export const bangs = [
     "d": "en.wiktionary.org",
     "s": "Wiktionary",
     "t": "wiktionary",
-    "u": "http://en.wiktionary.org/wiki/Special:Search?search={{{s}}}&go=Define"
+    "u": "https://en.wiktionary.org/wiki/Special:Search?search={{{s}}}&go=Define"
   },
   {
     "d": "it.wiktionary.org",
@@ -77849,7 +77849,7 @@ export const bangs = [
     "d": "pl.wikipedia.org",
     "s": "Wikipedia (PL)",
     "t": "wpl",
-    "u": "http://pl.wikipedia.org/wiki/Special:Search?search={{{s}}}&go=Go"
+    "u": "https://pl.wikipedia.org/wiki/Special:Search?search={{{s}}}&go=Go"
   },
   {
     "d": "www.washingtonpost.com",
@@ -78083,7 +78083,7 @@ export const bangs = [
     "d": "www.wordreference.com",
     "s": "WordReference (EN)",
     "t": "wren",
-    "u": "http://www.wordreference.com/definition/{{{s}}}"
+    "u": "https://www.wordreference.com/definition/{{{s}}}"
   },
   {
     "d": "www.wordreference.com",
@@ -78233,7 +78233,7 @@ export const bangs = [
     "d": "www.wordreference.com",
     "s": "WordReference (EN)",
     "t": "wrn",
-    "u": "http://www.wordreference.com/definition/{{{s}}}"
+    "u": "https://www.wordreference.com/definition/{{{s}}}"
   },
   {
     "d": "ro.wikipedia.org",
@@ -78329,7 +78329,7 @@ export const bangs = [
     "d": "www.wordreference.com",
     "s": "WordReference Definition",
     "t": "wr",
-    "u": "http://www.wordreference.com/definition/{{{s}}}"
+    "u": "https://www.wordreference.com/definition/{{{s}}}"
   },
   {
     "d": "www.wordreference.com",
